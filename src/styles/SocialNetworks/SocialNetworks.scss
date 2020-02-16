@@ -1,0 +1,56 @@
+.social-networks {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+
+	a {
+		padding: 25px;
+
+		svg {
+			width: 25px;
+			height: 25px;
+
+			path {
+				fill: theme(color, secondary);
+				transition: fill 500ms;
+			}
+		}
+	}
+	
+	/***
+  *** smartphone xxl ***
+  ***/
+  @media #{theme(media-queries, smartphone-xxl)} {
+    a:hover svg path {
+    	fill: theme(color, light);
+    }
+  }
+
+	/***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+    a {
+    	padding: 0;
+    }
+  }
+
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+    a {
+    	padding: 0;
+
+    	svg {
+    		width: 35px;
+    		height: 35px;
+    	}
+    }
+  }
+}
+

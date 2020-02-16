@@ -1,0 +1,8 @@
+.header-menu {
+	position: fixed;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+	background-color: theme(color, primary);
+}
