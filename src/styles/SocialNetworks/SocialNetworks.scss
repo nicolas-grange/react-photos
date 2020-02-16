@@ -11,7 +11,7 @@
 			height: 25px;
 
 			path {
-				fill: theme(color, secondary);
+				fill: theme(color, light);
 				transition: fill 500ms;
 			}
 		}
@@ -22,7 +22,7 @@
   ***/
   @media #{theme(media-queries, smartphone-xxl)} {
     a:hover svg path {
-    	fill: theme(color, light);
+    	fill: theme(color, primary);
     }
   }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/logo3.png';
+import logo from '../../assets/images/logo.png';
 import Newsletter from './Newsletter';
 import SocialNetworks from '../SocialNetworks/SocialNetworks';
 

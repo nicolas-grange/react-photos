@@ -50,18 +50,18 @@
         }
 
         a {
-          color: theme(color, dark);
+          color: theme(color, light);
           letter-spacing: 2px;
           transition: color 500ms;
 
           &.selected {
-            color: theme(color, light);
+            color: theme(color, primary);
           }
         }
       }
 
       span {
-        color: theme(color, light);
+        color: #AAA;
         font-weight: 900;
         display: block;
         position: absolute;
@@ -129,7 +129,7 @@
   @media #{theme(media-queries, smartphone-xxl)} {
     // main menu
     .navigation .main-menu ul li a:hover {
-      color: theme(color, light);
+      color: theme(color, primary);
     }
   }
 
@@ -177,7 +177,7 @@
       // main menu
       .main-menu span{
         transition: opacity 500ms 750ms, transform 500ms 750ms;
-        opacity: 0.2;
+        opacity: 0.1;
         transform: translateX(0);
       }
     }

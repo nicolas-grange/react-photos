@@ -9,7 +9,7 @@
 	  z-index: 100;
 
 	  span {
-	  	background-color: theme(color, dark);
+	  	background-color: theme(color, light);
 		height: 2px;
 		border-radius: 2px;
 		display: block;
@@ -56,7 +56,7 @@
   ***/
 	@media #{theme(media-queries, smartphone-xxl)} {
 		.burger-menu:hover span{
-			background-color: theme(color, light);
+			background-color: theme(color, primary);
 		}
 	}
 }
