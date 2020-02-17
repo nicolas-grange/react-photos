@@ -24,13 +24,15 @@ class Header extends React.Component {
 	}
 
   render() {
+
+    const routes = this.props.routes;
     const open = this.state.open;
-    
+
     return (
       <header className={"header-menu " + (open ? 'open' : '')} onClick={this.handleClick}>
         <BurgerMenu></BurgerMenu>
         <Overlay></Overlay>
-        <Navigation></Navigation>
+        <Navigation routes={routes}></Navigation>
       </header>
     );
   }
