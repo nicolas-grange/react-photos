@@ -16,24 +16,28 @@ import './styles/App.scss';
 const routes = [
   {
   	id: 1,
+  	visible: true,
     path: '/',
     name: 'Home',
     component: Home
   },
   {
   	id: 2,
+  	visible: true,
     path: '/about',
     name: 'About me',
     component: About
   },
   {
   	id: 3,
+  	visible: true,
     path: '/portfolio',
     name: 'Portfolio',
     component: Portfolio
   },
   {
   	id: 4,
+  	visible: true,
     path: '/contact',
     name: 'Contact',
     component: Contact
@@ -43,25 +47,30 @@ const routes = [
 
 class App extends React.Component {
 
+	// get the routes components list
+	getRoutesComponents() {
+		const routesList = routes.map((route) => (
+      <Route
+        key={route.id} 
+        path={route.path} 
+        component={route.component} 
+      />
+	  ));
+
+		return routesList;
+	}
+
   render() {
+  	const routesComponents = this.getRoutesComponents();
+
 		return (
 			<Router>
 		    <div className="App">
 		      <Header routes={routes}/>
 
-
 		      <main>
-		      	{routes.map((route) => (
-	            <Route
-	              key={route.id} 
-	              path={route.path} 
-	              component={route.component} 
-	            />
-	          ))}
+		      	{routesComponents}
 		      </main>
-
-
-
 
 		      <footer></footer>
 		    </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Route, 
   NavLink,
   withRouter
 } from 'react-router-dom';
@@ -10,18 +9,33 @@ import Newsletter from './Newsletter';
 import SocialNetworks from '../SocialNetworks/SocialNetworks';
 
 class Navigation extends React.Component {
+	constructor(props) {
+		super(props);
+		this.routesVisible = this.props.routes.filter(route => route.visible === true);
+	}
 	
 	// get the name of the current page
 	matchPathNametoRoute() {
-		const routes = this.props.routes;
 		const pathName = this.props.location.pathname;
 
-		return routes.find(route => route.path === pathName).name;
+		return this.routesVisible.find(route => route.path === pathName).name;
+	}
+
+	// get the links of the main menu
+	getLinksMainMenu() {
+		const links = this.routesVisible.map(route => (
+  		<li key={route.id}>
+		    <NavLink exact activeClassName="selected" to={route.path}>{route.name}</NavLink>
+		  </li>
+  	));
+
+  	return links;
 	}
 
   render() {
 
   	const pageName = this.matchPathNametoRoute();
+  	const linksMainMenu = this.getLinksMainMenu();
 
     return (
       <nav className="navigation">
@@ -32,18 +46,7 @@ class Navigation extends React.Component {
 				</h1>
 				<div className="main-menu">
 					<ul>
-					  <li>
-					    <NavLink exact activeClassName="selected" to="/">Home</NavLink>
-					  </li>
-					  <li>
-					    <NavLink exact activeClassName="selected" to="/about">About me</NavLink>
-					  </li>
-					  <li>
-					    <NavLink exact activeClassName="selected" to="/portfolio">Portfolio</NavLink>
-					  </li>
-					  <li>
-					    <NavLink exact activeClassName="selected" to="/contact">Contact</NavLink>
-					  </li>
+						{linksMainMenu}
 					</ul>
 					<Newsletter></Newsletter>
 					<span>{pageName}</span>

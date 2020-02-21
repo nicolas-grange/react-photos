@@ -37,6 +37,7 @@ class Overlay extends React.Component {
 
   render() {
   	const style = this.state.style;
+  	
     return (
       <div style={style} className="nav-overlay"></div>
     );
