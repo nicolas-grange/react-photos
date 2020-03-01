@@ -4,9 +4,11 @@ import {
   withRouter
 } from 'react-router-dom';
 
-import logo from '../../assets/images/logo.png';
+import Logo from '../Logo/Logo';
 import Newsletter from './Newsletter';
 import SocialNetworks from '../SocialNetworks/SocialNetworks';
+
+
 
 class Navigation extends React.Component {
 	constructor(props) {
@@ -39,20 +41,16 @@ class Navigation extends React.Component {
 
     return (
       <nav className="navigation">
-				<h1 className="logo">
-					<a href="/">
-					  <img src={logo} alt="Daguet Photographie"/>
-					</a>
-				</h1>
+				<Logo color="white"/>
 				<div className="main-menu">
 					<ul>
 						{linksMainMenu}
 					</ul>
-					<Newsletter></Newsletter>
+					<Newsletter/>
 					<span>{pageName}</span>
 				</div>
 				<div className="social-menu">
-					<SocialNetworks></SocialNetworks>
+					<SocialNetworks/>
 				</div>
 			</nav>
     );

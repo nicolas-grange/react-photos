@@ -30,9 +30,9 @@ class Header extends React.Component {
 
     return (
       <header className={"header-menu " + (open ? 'open' : '')} onClick={this.handleClick}>
-        <BurgerMenu></BurgerMenu>
-        <Overlay></Overlay>
-        <Navigation routes={routes}></Navigation>
+        <BurgerMenu/>
+        <Overlay/>
+        <Navigation routes={routes}/>
       </header>
     );
   }

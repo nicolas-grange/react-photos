@@ -1,8 +1,7 @@
 import React from 'react';
-import FacebookIcon from '../Icons/Facebook.js';
-import InstagramIcon from '../Icons/Instagram.js';
-import PinterestIcon from '../Icons/Pinterest.js';
-import TwitterIcon from '../Icons/Twitter.js';
+
+import {FacebookIcon, InstagramIcon, PinterestIcon, TwitterIcon} from '../Icons';
+
 
 class SocialNetworks extends React.Component {
   render() {

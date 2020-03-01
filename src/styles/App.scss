@@ -2,10 +2,24 @@
 @import '_config/variables';
 @import '_config/general';
 
+@import 'Logo/Logo';
+
 @import 'Header/Header';
 @import 'Header/BurgerMenu';
 @import 'Header/Overlay';
 @import 'Header/Navigation';
 @import 'Header/Newsletter';
 
+@import 'FormElement/FormElement';
+
 @import 'SocialNetworks/SocialNetworks';
+
+@import 'PretitleTitle/PretitleTitle';
+
+@import 'Pages/Contact';
+@import 'ContactElementsList/ContactElementsList';
+
+@import 'GoogleMap/GoogleMap';
+@import 'ContactForm/ContactForm';
+@import 'ContactForm/OpenCloseForm';
+

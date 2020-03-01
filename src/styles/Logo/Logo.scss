@@ -1,0 +1,20 @@
+.logo {
+  margin: 15px 15px 0;
+
+  a {
+    display: block;
+
+    img {
+      width: 75px;
+    }
+  }
+
+	/***
+	*** tablet portrait ***
+	***/
+	@media #{theme(media-queries, tablet-portrait)} {
+		a img {
+			width: 100px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.contact-container {
+	.map {
+		max-height: 400px;
+		width: 100%;
+		
+		/***
+		*** tablet landscape ***
+		***/
+		@media #{theme(media-queries, tablet-landscape)} {
+			max-height: inherit;
+		}
+	}
+}
+

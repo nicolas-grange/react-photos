@@ -1,5 +1,6 @@
 import React from 'react';
-import ArrowRightIcon from '../Icons/ArrowRight.js';
+
+import {ArrowRightIcon} from '../Icons';
 
 class Newsletter extends React.Component {
   constructor(props) {

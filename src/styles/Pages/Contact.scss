@@ -1,0 +1,72 @@
+.contact-container {
+	display: flex;
+	flex-direction: column;
+
+	.contact-info {
+		&>.pretitle-title {
+			max-width: 400px;
+    	
+			&::after {
+				content:"";
+				max-width: 500px;
+				width: 50%;
+				height: 2px;
+				background: theme(color, primary);
+				position: absolute;
+				bottom: 0;
+				left: 25%;
+				display: block;
+			}
+		}
+	}
+
+	/***
+	*** tablet landscape ***
+	***/
+	@media #{theme(media-queries, tablet-landscape)} {
+		flex-direction: row;
+
+		.logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		section {
+			height: 100vh;
+
+			&.contact-info {
+				background-color: theme(color, dark);
+				width: 45%;
+				max-width: 550px;
+				min-width: 350px;
+				display: flex;
+				flex-direction: column;
+
+				&>.pretitle-title {
+		    	text-align: right;
+		    	margin-top: 40px;
+		    	margin-right: 0;
+
+					.title, 
+					.pretitle {
+						color: theme(color, light);
+						font-weight: 600;
+					}
+
+					&::after {
+						right: 0;
+						left: inherit;
+						width: 100%;
+					}
+				}
+			}
+
+			&.map-container {
+				flex: 1;
+				position: relative;
+				overflow: hidden;
+			}
+		}
+	}
+}

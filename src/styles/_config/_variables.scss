@@ -2,11 +2,14 @@ $theme: (
   color: (
   	dark: #101010,
   	light: #FFF,
+  	grey: #AAA,
     primary: #CFB997,
     secondary: #5c2c30,
     text: (
-		dark: #333
-    )
+		dark: #333,
+		grey: #555
+    ),
+    border: #E0E0E0
   ),
 	space: (
 		extra-small: 10px,
