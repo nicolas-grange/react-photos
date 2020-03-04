@@ -1,0 +1,49 @@
+.about-container {
+	.info-section-container {
+		ul {
+			padding-left: 25px;
+
+			li {
+				position: relative;
+
+				&::before {
+					content: "";
+					display: block;
+					border-radius: 50%;
+					width: 8px;
+					height: 8px;
+					background: theme(color, primary);
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: -20px;
+				}
+			}
+		}
+	}
+
+	/***
+	*** tablet landscape ***
+	***/
+	@media #{theme(media-queries, tablet-portrait)} {
+		display: flex;
+		align-items: center;
+
+		.photo-section-container {
+			background: theme(color, dark);
+			width: 50%;
+			position: fixed;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.info-section-container {
+			width: 50%;
+			margin-left: 50%;
+		}
+	}
+}

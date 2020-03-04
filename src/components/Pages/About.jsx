@@ -2,28 +2,24 @@ import React from 'react';
 
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 import PhotoSection from '../PhotoSection/PhotoSection';
-
 import photoAbout from '../../assets/images/about/about.jpg';
-
 
 const data = {
 	pretitleTitle: {
 		pretitle: "More",
 		title: "About me"
 	}
-
 }
-
 
 class About extends React.Component {
   render() {
     return (
     	<div className="about-container">
 
-    		<section>
+    		<section className="photo-section-container">
     			<PhotoSection photo={photoAbout}/>
 	    	</section>
-	    	<section>
+	    	<section className="info-section-container  wrapper-container">
 	    		<PretitleTitle data={data.pretitleTitle}/>
 	    		<h3>My story</h3>
 	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat:</p>

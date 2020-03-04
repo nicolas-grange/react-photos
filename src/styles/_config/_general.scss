@@ -5,6 +5,10 @@
 	outline: none;
 }
 
+p, h3, h4, h5, h6, ul, ol {
+	line-height: 1.5;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -22,3 +26,4 @@ ol {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
