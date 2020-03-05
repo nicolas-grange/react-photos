@@ -1,22 +1,56 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 
 import Gallery from "react-photo-gallery";
-
+import Carousel, { Modal, ModalGateway } from 'react-images';
 
 
 class GalleryPhotos extends React.Component {
+  constructor(props) {
+    super(props);
+    this.openLightbox = this.openLightbox.bind(this);
+    this.closeLightbox = this.closeLightbox.bind(this);
+    this.state = {
+      selectedIndex: 0,
+      lightboxIsOpen: false
+    }
+  }
 
+  openLightbox(e, index) {
+    this.setState({
+      selectedIndex: index.index,
+      lightboxIsOpen: true
+    });
+  } 
+
+  closeLightbox(e) {
+    this.setState({
+      selectedIndex: 0,
+      lightboxIsOpen: false
+    });
+  } 
 
   render() {
-
-
-    const photos = this.props.photos;
-
+    const photos = this.props.photos[0].photos;
+    const selectedIndex = this.state.selectedIndex;
+    const lightboxIsOpen = this.state.lightboxIsOpen;
 
     return (
-      <div>
-    	 <Gallery photos={photos}  />
-       
+      <div className="gallery-photos">
+        <Gallery photos={photos} onClick={this.openLightbox}/>
+        <ModalGateway>
+          {lightboxIsOpen ? (
+            <Modal onClose={this.closeLightbox}>
+              <Carousel
+                currentIndex={selectedIndex}
+                views={photos.map(x => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
       </div>
     );
   }

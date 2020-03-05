@@ -24,21 +24,21 @@ const routes = [
   {
   	id: 2,
   	visible: true,
-    path: '/about',
+    path: '/about/',
     name: 'About me',
     component: About
   },
   {
   	id: 3,
   	visible: true,
-    path: '/portfolio',
+    path: '/portfolio/',
     name: 'Portfolio',
     component: Portfolio
   },
   {
   	id: 4,
   	visible: true,
-    path: '/contact',
+    path: '/contact/',
     name: 'Contact',
     component: Contact
   }

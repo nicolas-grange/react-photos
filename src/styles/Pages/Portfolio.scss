@@ -1,3 +1,9 @@
 .portfolio-container {
 
 }
+
+.fullscreen {
+	svg path {
+		color: theme(color, light);
+	}
+}
