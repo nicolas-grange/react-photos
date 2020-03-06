@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Redirect
 } from 'react-router-dom';
 
 import Home from './components/Pages/Home';
@@ -18,28 +19,28 @@ const routes = [
   	id: 1,
   	visible: true,
     path: '/',
-    name: 'Home',
+    label: 'Home',
     component: Home
   },
   {
   	id: 2,
   	visible: true,
-    path: '/about/',
-    name: 'About me',
+    path: '/about',
+    label: 'About me',
     component: About
   },
   {
   	id: 3,
   	visible: true,
-    path: '/portfolio/',
-    name: 'Portfolio',
+    path: '/portfolio/all',
+    label: 'Portfolio',
     component: Portfolio
   },
   {
   	id: 4,
   	visible: true,
-    path: '/contact/',
-    name: 'Contact',
+    path: '/contact',
+    label: 'Contact',
     component: Contact
   }
 ];
@@ -57,7 +58,14 @@ class App extends React.Component {
       />
 	  ));
 
-		return routesList;
+    const routesComponents = (
+      <div>
+        {routesList}
+        <Redirect from="/portfolio" to="/portfolio/all" />
+      </div>
+    );
+
+		return routesComponents;
 	}
 
   render() {
@@ -67,11 +75,9 @@ class App extends React.Component {
 			<Router>
 		    <div className="App">
 		      <Header routes={routes}/>
-
 		      <main>
 		      	{routesComponents}
 		      </main>
-
 		      <footer></footer>
 		    </div>
 		  </Router>

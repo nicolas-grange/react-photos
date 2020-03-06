@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Link,
   withRouter,
   Route
 } from "react-router-dom";
@@ -19,22 +18,22 @@ const data = {
 		{
 			id: 1,
 			label: "All",
-			parameter: "all/"
+			path: "/portfolio/all"
 		},
 		{
 			id: 2,
 			label: "Portraits",
-			parameter: "portraits/",
+			path: "/portfolio/portraits",
 		},
 		{
 			id: 3,
 			label: "Animals",
-			parameter: "animals/"
+			path: "/portfolio/animals"
 		},
 		{
 			id: 4,
 			label: "Landscapes",
-			parameter: "landscapes/"
+			path: "/portfolio/landscapes"
 		}
 	],
 	photos: [
@@ -116,11 +115,9 @@ const data = {
 class Portfolio extends React.Component {
   render() {
 
-  	const pathRootPage = "/" + this.props.location.pathname.split("/")[1] + "/";
-
+  	const pathRootPage = "/" + this.props.location.pathname.split("/")[1];
   	const Gallery = ({ match }) => {
- 
-      return (
+				return (
 	      <div>
 	        <h3>ID: {match.params.category}</h3>
 	        <GalleryPhotos photos={data.photos} />
@@ -128,16 +125,14 @@ class Portfolio extends React.Component {
 	    );
     };
 
-     console.log(pathRootPage)
     return (
     	<section className="portfolio-container">
     		<PretitleTitle data={data.pretitleTitle}/>
     		<Router>
-    			<NavLinks links={data.links.map((link) => {
-    				link.parameter = pathRootPage + link.parameter;
-    				return link;
-    			})} />
-          <Route path={pathRootPage + ":category"} component={Gallery}/>
+    			<nav>
+    				<NavLinks links={data.links} />
+    			</nav>
+          <Route path={pathRootPage + "/:category"} component={Gallery}/>
         </Router>	
     	</section>
     );
