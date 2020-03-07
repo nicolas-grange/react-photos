@@ -1,8 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route,
-  Redirect
+  Route
 } from 'react-router-dom';
 
 import Home from './components/Pages/Home';
@@ -32,7 +31,7 @@ const routes = [
   {
   	id: 3,
   	visible: true,
-    path: '/portfolio/all',
+    path: '/portfolio',
     label: 'Portfolio',
     component: Portfolio
   },
@@ -44,7 +43,6 @@ const routes = [
     component: Contact
   }
 ];
-
 
 class App extends React.Component {
 
@@ -58,14 +56,7 @@ class App extends React.Component {
       />
 	  ));
 
-    const routesComponents = (
-      <div>
-        {routesList}
-        <Redirect from="/portfolio" to="/portfolio/all" />
-      </div>
-    );
-
-		return routesComponents;
+		return routesList;
 	}
 
   render() {

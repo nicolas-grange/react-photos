@@ -30,13 +30,14 @@ class GalleryPhotos extends React.Component {
   } 
 
   render() {
-    const photos = this.props.photos[0].photos;
+    const photos = this.props.photos;
+    const heightImg = this.props.heightImg;
     const selectedIndex = this.state.selectedIndex;
     const lightboxIsOpen = this.state.lightboxIsOpen;
 
     return (
       <div className="gallery-photos">
-        <Gallery photos={photos} onClick={this.openLightbox}/>
+        <Gallery photos={photos} onClick={this.openLightbox} targetRowHeight={heightImg} />
         <ModalGateway>
           {lightboxIsOpen ? (
             <Modal onClose={this.closeLightbox}>
