@@ -5,10 +5,6 @@ import ContactElementsList from '../ContactElementsList/ContactElementsList';
 import GoogleMap from '../GoogleMap/GoogleMap';
 import ContactForm from '../ContactForm/ContactForm';
 
-import Logo from '../Logo/Logo';
-
-
-
 const data = {
 	pretitleTitle: {
 		pretitle: "Fell free to",
@@ -82,42 +78,10 @@ const data = {
 }
 
 class Contact extends React.Component {
-	constructor(props) {
-		super(props);
-		this.updateSizeWindow = this.updateSizeWindow.bind(this);
-		this.state = {
-			colorLogo: "dark"
-		};
-	}
-
-	componentDidMount() {
-    window.addEventListener('resize', this.updateSizeWindow);
-    this.updateSizeWindow();
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateSizeWindow);
-  }
-
-  updateSizeWindow() {
-  	if(window.matchMedia("only screen and (min-width : 1024px)").matches) { // tablet-landscape
-      this.setState({
-      	colorLogo: "white"
-      });
-    } else {
-    	this.setState({
-      	colorLogo: "dark"
-      });
-    }
-  }
-
   render() {
-    const colorLogo = this.state.colorLogo;
-
     return (
     	<div className="contact-container">
-    		<Logo color={colorLogo}/>
-	    	<section className="contact-info wrapper-container">
+	    	<section className="contact-info wrapper-intern">
 	    		<PretitleTitle data={data.pretitleTitle}/>
 	    		<ContactElementsList data={data.contactElementsList}/>
 	    	</section>

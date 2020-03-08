@@ -60,7 +60,7 @@
       }
 
       span {
-        color: #AAA;
+        color: theme(color, light);
         font-weight: 900;
         display: block;
         position: absolute;
@@ -174,7 +174,7 @@
 
     &.open {
       // main menu
-      .main-menu span{
+      .main-menu span {
         transition: opacity 500ms 750ms, transform 500ms 750ms;
         opacity: 0.1;
         transform: translateX(0);

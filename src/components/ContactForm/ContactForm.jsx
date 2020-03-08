@@ -24,7 +24,7 @@ class ContactForm extends React.Component {
 
 
     return (
-    	<div className={"contact-form wrapper-container " + (visible === true ? 'visible' : 'invisible')}>
+    	<div className={"contact-form wrapper-intern " + (visible === true ? 'visible' : 'invisible')}>
         <form>
           <FormElement data={formItems.name}/>
           <FormElement data={formItems.mail}/>

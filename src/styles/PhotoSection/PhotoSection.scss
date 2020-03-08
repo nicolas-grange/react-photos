@@ -25,7 +25,7 @@
 	***/
 	@media #{theme(media-queries, tablet-portrait)} {
 		figure {
-			height: calc(100vh - 200px);
+			height: 100vh;
 			min-height: inherit;
 		}
 	}

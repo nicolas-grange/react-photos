@@ -36,7 +36,7 @@ class GalleryPhotos extends React.Component {
     const lightboxIsOpen = this.state.lightboxIsOpen;
 
     return (
-      <div className="gallery-photos">
+      <div className="gallery-photos container-extern">
         <Gallery photos={photos} onClick={this.openLightbox} targetRowHeight={heightImg} />
         <ModalGateway>
           {lightboxIsOpen ? (

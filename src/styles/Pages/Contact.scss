@@ -26,12 +26,6 @@
 	@media #{theme(media-queries, tablet-landscape)} {
 		flex-direction: row;
 
-		.logo {
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-
 		section {
 			height: 100vh;
 
@@ -45,19 +39,19 @@
 
 				&>.pretitle-title {
 		    	text-align: right;
-		    	margin-top: 40px;
+		    	margin-top: 0;
 		    	margin-right: 0;
 
 					.title, 
 					.pretitle {
 						color: theme(color, light);
-						font-weight: 600;
 					}
 
 					&::after {
 						right: 0;
 						left: inherit;
 						width: 100%;
+						bottom: 25px;
 					}
 				}
 			}
@@ -68,5 +62,19 @@
 				overflow: hidden;
 			}
 		}
+	}
+
+	/***
+	*** laptop ***
+	***/
+	@media #{theme(media-queries, laptop)} {
+		section {
+			&.contact-info {
+				&>.pretitle-title {
+		    	padding-top: 50px;
+		    }
+		  }
+		}
+
 	}
 }

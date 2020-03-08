@@ -1,5 +1,9 @@
 .about-container {
-	.info-section-container {
+	.info-section-container .info-section-content {
+		&>h3:first-of-type {
+			margin-top: 0;
+		}
+
 		ul {
 			padding-left: 25px;
 
@@ -44,6 +48,11 @@
 		.info-section-container {
 			width: 50%;
 			margin-left: 50%;
+
+			.info-section-content {
+				max-width: 780px;
+				margin: auto;
+			}
 		}
 	}
 }

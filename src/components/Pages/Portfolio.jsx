@@ -204,10 +204,8 @@ class Portfolio extends React.Component {
   render() {
   	const Gallery = ({ match }) => {
   		const category = match.params.category;
-
   		if(this.categoryExists(category)) {
   			const photos = this.getPhotosByCategory(category);
-
 	  		return (
 		      <GalleryPhotos photos={photos.photos} heightImg={photos.heightImg}/>
 		    );
@@ -222,9 +220,9 @@ class Portfolio extends React.Component {
 
     return (
     	<section className="portfolio-container">
-    		<PretitleTitle data={data.pretitleTitle}/>
+    		<PretitleTitle className="wrapper-intern" data={data.pretitleTitle}/>
     		<Router>
-    			<nav>
+    			<nav className="portfolio-nav">
     				<NavLinks links={links} />
     			</nav>
     			<Switch>

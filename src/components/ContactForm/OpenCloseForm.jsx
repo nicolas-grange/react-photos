@@ -15,5 +15,3 @@ class OpenCloseForm extends React.Component {
 }
 
 export default OpenCloseForm;
-
-
