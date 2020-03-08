@@ -51,6 +51,7 @@ class App extends React.Component {
 		const routesList = routes.map((route) => (
       <Route
         key={route.id} 
+        exact={route.path === "/" ? true : false}
         path={route.path} 
         component={route.component} 
       />

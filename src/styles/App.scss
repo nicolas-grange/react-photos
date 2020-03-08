@@ -11,17 +11,13 @@
 @import 'Header/Newsletter';
 
 @import 'FormElement/FormElement';
-
 @import 'SocialNetworks/SocialNetworks';
-
 @import 'PretitleTitle/PretitleTitle';
 
-@import 'Pages/Contact';
-@import 'ContactElementsList/ContactElementsList';
+@import 'Pages/Home';
+@import 'Button/Button';
 
-@import 'GoogleMap/GoogleMap';
-@import 'ContactForm/ContactForm';
-@import 'ContactForm/OpenCloseForm';
+
 
 @import 'Pages/About';
 @import 'PhotoSection/PhotoSection';
@@ -29,3 +25,9 @@
 @import 'Pages/Portfolio';
 @import 'NavLinks/NavLinks';
 @import 'GalleryPhotos/GalleryPhotos';
+
+@import 'Pages/Contact';
+@import 'ContactElementsList/ContactElementsList';
+@import 'GoogleMap/GoogleMap';
+@import 'ContactForm/ContactForm';
+@import 'ContactForm/OpenCloseForm';
