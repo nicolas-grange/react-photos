@@ -1,0 +1,54 @@
+.image-text-link-container {
+	figure {
+		margin: 0;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.text-container {
+		.button {
+			margin-top: 20px;
+		}
+	}
+
+	/***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+  	display: flex;
+
+  	figure {
+  		width: calc(55% - 25px);
+  		margin-right: 50px;
+  		min-height: 350px;
+
+  		img {
+  			position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+  		}
+  	}
+
+  	.text-container {
+  		display: flex;
+  		flex-direction: column;
+    	justify-content: space-between;
+  		width: calc(45% - 25px);
+
+  		h3 {
+  			margin-top: 0;
+  		}
+
+  		.button {
+  			width: fit-content;
+  			max-width: 140px;
+  		}
+  	}
+  }
+}

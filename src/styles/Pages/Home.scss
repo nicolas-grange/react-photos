@@ -1,31 +1,139 @@
 .home-container {
 	.introduction-section {
 		display: flex;
-		background: theme(color, dark);
+		background-color: theme(color, dark);
 		flex-direction: column;
 		height: 100vh;
 		justify-content: space-between;
+		background: url("../../assets/images/home/intro-mobile.jpg") center no-repeat;
+		background-size: cover;
 
 		.infos {
+			padding-left: 20px; 
+
 			p {
 				color: theme(color, primary);
+				font-size: 22px;
+				font-weight: 700;
+				margin: 0;
 			}
 
 			h2 {
 				color: theme(color, light);
+				font-weight: 900;
+				margin: 0 0 50px;
+				font-size: 35px;
+				line-height: 45px;
 			}
 		}
 
+		.scroll-icon {
+			display: none;
+		}
 		.social-networks {
-			margin: 0 auto 10px;
+			margin: 0 auto 15px;
 			width: 100%;
 			max-width: 300px;
 			justify-content: space-around;
-
 
 			a {
 				padding: 0;
 			}
 		}
 	}
+
+	/***
+  *** smartphone xxl ***
+  ***/
+  @media #{theme(media-queries, smartphone-xxl)} {
+    .introduction-section {
+			background: url("../../assets/images/home/intro-mobile-plus.jpg") center no-repeat;
+			background-size: cover;
+
+			.infos {
+				padding-left: 20px; 
+
+				p {
+					font-size: 24px;
+					font-weight: 700;
+				}
+
+				h2 {
+					font-size: 40px;
+					line-height: 50px;
+				}
+			}
+
+			.social-networks {
+				margin: 0 0 15px;
+			}
+		}
+  }
+
+  /***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+  	.introduction-section {
+  		.infos {
+  			padding-left: 0;
+  			max-width: 500px;
+  			margin-left: 20%;
+
+  			p {
+					font-size: 28px;
+				}
+
+				h2 {
+					font-size: 45px;
+					line-height: 55px;
+				}
+  		}
+
+  		.scroll-icon {
+				display: inline-block;
+				width: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-bottom: 15px;
+			}
+
+  		.social-networks {
+	  		position: absolute;
+	  		max-width: 60px;
+				text-align: center;
+				left: 50px;
+				max-height: 280px;
+				bottom: 0;
+	  	}
+  	}
+  }
+
+  /***
+  *** tablet landscape ***
+  ***/
+  @media #{theme(media-queries, tablet-landscape)} {
+  
+  	.introduction-section {
+  		background: url("../../assets/images/home/intro-tablet.jpg") center no-repeat;
+			background-size: cover;
+
+  		.infos {
+  			padding-left: 0;
+
+  			p {
+					font-size: 32px;
+				}
+
+				h2 {
+					font-size: 55px;
+					line-height: 65px;
+				}
+  		}
+
+  		.social-networks {
+				max-height: 300px;
+	  	}
+  	}
+  }
 }
