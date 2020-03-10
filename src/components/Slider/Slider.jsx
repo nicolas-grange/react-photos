@@ -1,8 +1,11 @@
 import React from 'react';
 
 import Swiper from 'react-id-swiper';
-import 'swiper/css/swiper.css';
 import Slide from './Slide';
+
+import {ArrowRightIcon} from '../Icons';
+
+import 'swiper/css/swiper.css';
 
 class Slider extends React.Component {
   render() {
@@ -10,11 +13,19 @@ class Slider extends React.Component {
     const slides = this.props.data.map((slide, index) => <Slide key={index} data={slide}/>);
 
     const params = {
-      spaceBetween: 50,
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      pagination: {
+        el: '.slider-pagination',
+        type: 'fraction',
+      },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
+        nextEl: '.slider-button-next',
+        prevEl: '.slider-button-prev'
+      },
+      renderPrevButton: () => <div className="slider-button slider-button-prev"><ArrowRightIcon/></div>,
+      renderNextButton: () => <div className="slider-button slider-button-next"><ArrowRightIcon/></div>,
     };
 
     return (
@@ -22,6 +33,7 @@ class Slider extends React.Component {
         <Swiper {...params}>
           {slides}
         </Swiper>
+        <div className="slider-pagination"></div>
       </div>
     );
   }

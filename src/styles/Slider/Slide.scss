@@ -1,55 +1,23 @@
 .slider-container .container-slide {
-	figure {
-		margin: 0;
-		position: relative;
+  &.swiper-slide {
+    opacity: 0!important;
 
-		img {
-			width: 100%;
-		}
-	}
-
-	.text-container {
-		.button {
-			margin-top: 20px;
-		}
-	}
+    &#{-active} {
+      opacity: 1!important;
+    }
+  }
 
 	/***
   *** tablet portrait ***
   ***/
   @media #{theme(media-queries, tablet-portrait)} {
-  	display: flex;
-  	flex-direction: row-reverse;
+    .image-text-link-container {
+      flex-direction: row;
 
-  	figure {
-  		width: calc(55% - 25px);
-  		margin-left: 50px;
-  		min-height: 350px;
-
-  		img {
-  			position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-  		}
-  	}
-
-  	.text-container {
-  		display: flex;
-  		flex-direction: column;
-    	justify-content: space-between;
-  		width: calc(45% - 25px);
-
-  		h3 {
-  			margin-top: 0;
-  		}
-
-  		.button {
-  			width: fit-content;
-  			max-width: 140px;
-  		}
-  	}
+      figure {
+        margin-right: 50px;
+        margin-left: 0;
+      }
+    }
   }
 }

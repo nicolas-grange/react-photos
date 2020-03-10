@@ -19,10 +19,11 @@
   ***/
   @media #{theme(media-queries, tablet-portrait)} {
   	display: flex;
+    flex-direction: row-reverse;
 
   	figure {
   		width: calc(55% - 25px);
-  		margin-right: 50px;
+  		margin-left: 50px;
   		min-height: 350px;
 
   		img {
