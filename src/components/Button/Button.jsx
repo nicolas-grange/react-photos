@@ -7,7 +7,9 @@ class Button extends React.Component {
     const data = this.props.data;
     const handleClick = this.props.handleClick;
     return (
-    	<a onClick={handleClick} className='button' href={data.path}>{data.label}<ArrowRightIcon/></a>
+    	<a onClick={handleClick} className='button' href={data.path}>
+    		{data.label}<ArrowRightIcon/>
+    	</a>
     );
   }
 }

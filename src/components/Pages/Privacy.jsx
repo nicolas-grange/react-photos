@@ -3,6 +3,11 @@ import React from 'react';
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 
 class Privacy extends React.Component {
+
+	componentDidMount() {
+		window.top.window.scrollTo(0,0);
+	}
+
   render() {
     return (
     	<section className="privacy-container">

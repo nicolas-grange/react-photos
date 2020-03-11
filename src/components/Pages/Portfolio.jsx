@@ -149,6 +149,10 @@ class Portfolio extends React.Component {
 		this.portfolioUrl = this.props.match.url;
 	}
 
+	componentDidMount() {
+		window.top.window.scrollTo(0,0);
+	}
+
 	shufflePhotos(photos) {
 		for (let i = photos.length - 1; i > 0; i--) {
 	    let j = Math.floor(Math.random() * (i + 1));
@@ -211,7 +215,7 @@ class Portfolio extends React.Component {
 		    );
   		} else {
   			return (
-					<h3>Error: category {category} doesn't exist...</h3>
+					<h3 className="wrapper-intern">Error: category {category} doesn't exist...</h3>
 		    );
   		}			
     };

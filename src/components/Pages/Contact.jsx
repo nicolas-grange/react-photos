@@ -78,6 +78,11 @@ const data = {
 }
 
 class Contact extends React.Component {
+
+	componentDidMount() {
+		window.top.window.scrollTo(0,0);
+	}
+
   render() {
     return (
     	<div className="contact-container">

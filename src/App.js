@@ -66,7 +66,7 @@ class App extends React.Component {
       />
 	  ));
 
-		return routesList;
+		return routesList
 	}
 
   render() {

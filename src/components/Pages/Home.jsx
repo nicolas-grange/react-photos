@@ -106,6 +106,10 @@ class Home extends React.Component {
     this.handleClickDiscover = this.handleClickDiscover.bind(this);
   }
 
+  componentDidMount() {
+    window.top.window.scrollTo(0,0);
+  }
+
   handleClickDiscover(e) {
     e.preventDefault();
     document.querySelector(e.target.getAttribute('href')).scrollIntoView({
