@@ -1,9 +1,7 @@
 .contact-container {
 	.contact-form {
 		transition: transform 500ms ease;
-		margin-top: 400px;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		margin-top: 450px;
 					
 		&.visible{
 			transform: translate(0);
@@ -43,13 +41,22 @@
 	  }
 
 	  /***
+		*** tablet portrait ***
+		***/
+	  @media #{theme(media-queries, tablet-portrait)} {
+	  	margin-top: 0;
+	  	width: 50%;
+			margin-right: 0;
+	  }
+
+	  /***
 		*** tablet landscape ***
 		***/
 		@media #{theme(media-queries, tablet-landscape)} {
 			border: 1px solid theme(color, border);
+			width: 100%;
 			width: 425px;
 			background-color: theme(color, light);
-			margin-top: 0;
 			position: absolute;
 			bottom: 0;
 			left: 0;

@@ -12,7 +12,7 @@ p, h3, h4, h5, h6, ul, ol {
 h3 {
 	font-weight: 700;
 	font-size: 20px;
-	color: theme(color, primary);
+	opacity: 0.9;
 }
 
 a {
@@ -31,10 +31,12 @@ ol {
 .wrapper-intern {
 	padding-left: 20px;
 	padding-right: 20px;
+	max-width: 500px; 
+	margin: auto;
 }
 
 .container-extern {
-	max-width: 1100px;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -47,5 +49,14 @@ ol {
 @media #{theme(media-queries, smartphone-xxl)} {
 	h3 {
 		font-size: 22px;
+	}
+}
+
+/***
+*** tablet portrait ***
+***/
+@media #{theme(media-queries, tablet-portrait)} {
+	.wrapper-intern {
+		max-width: 1000px; 
 	}
 }

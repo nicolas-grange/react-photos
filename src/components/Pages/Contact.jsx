@@ -81,9 +81,11 @@ class Contact extends React.Component {
   render() {
     return (
     	<div className="contact-container">
-	    	<section className="contact-info wrapper-intern">
-	    		<PretitleTitle data={data.pretitleTitle}/>
-	    		<ContactElementsList data={data.contactElementsList}/>
+	    	<section className="contact-info">
+	    		<div className="wrapper-intern">
+	    			<PretitleTitle data={data.pretitleTitle}/>
+	    			<ContactElementsList data={data.contactElementsList}/>
+	    		</div>
 	    	</section>
 	    	<section className="map-container">
 	    		<GoogleMap className="map" data={data.map}/>

@@ -8,8 +8,10 @@ import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Portfolio from './components/Pages/Portfolio';
 import Contact from './components/Pages/Contact';
+import Privacy from './components/Pages/Privacy';
 
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 import './styles/App.scss';
 
@@ -41,6 +43,13 @@ const routes = [
     path: '/contact',
     label: 'Contact',
     component: Contact
+  },
+  {
+    id: 5,
+    visible: false,
+    path: '/privacy',
+    label: 'Privacy',
+    component: Privacy
   }
 ];
 
@@ -62,7 +71,7 @@ class App extends React.Component {
 
   render() {
   	const routesComponents = this.getRoutesComponents();
-
+    
 		return (
 			<Router>
 		    <div className="App">
@@ -70,7 +79,7 @@ class App extends React.Component {
 		      <main>
 		      	{routesComponents}
 		      </main>
-		      <footer></footer>
+          <Footer />
 		    </div>
 		  </Router>
   	);

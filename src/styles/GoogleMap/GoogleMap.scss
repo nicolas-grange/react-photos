@@ -1,13 +1,25 @@
 .contact-container {
+	position: relative;
+
 	.map {
 		max-height: 400px;
 		width: 100%;
+
+		/***
+		*** tablet portrait ***
+		***/
+		@media #{theme(media-queries, tablet-portrait)} {
+			height: inherit;
+			max-height: 418px;
+			width: 50%!important;
+		}
 		
 		/***
 		*** tablet landscape ***
 		***/
 		@media #{theme(media-queries, tablet-landscape)} {
 			max-height: inherit;
+			width: 100%!important;
 		}
 	}
 }

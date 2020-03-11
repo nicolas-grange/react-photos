@@ -17,7 +17,11 @@ class Navigation extends React.Component {
 	// get the name of the current page
 	matchPathNametoRoute() {
 		const pathName = this.props.location.pathname.split('/')[1];
-		return this.routesVisible.find(route => route.path.split('/')[1] === pathName).label;
+		try {
+			return this.routesVisible.find(route => route.path.split('/')[1] === pathName).label;
+		} catch(error) {
+			return null;
+		}
 	}
 
   render() {

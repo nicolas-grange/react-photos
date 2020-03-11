@@ -33,10 +33,24 @@
   }
 
   /***
+  *** tablet-portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+		padding: 60px 0;
+  }
+
+  /***
+  *** tablet-landscape ***
+  ***/
+  @media #{theme(media-queries, tablet-landscape)} {
+		padding: 70px 0;
+  }
+
+  /***
   *** laptop ***
   ***/
   @media #{theme(media-queries, laptop)} {
-  	padding: 60px 0;
+  	padding: 80px 0;
 
 		.pretitle {
 			font-size: 20px;

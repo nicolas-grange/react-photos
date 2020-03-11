@@ -22,7 +22,7 @@
     flex-direction: row-reverse;
 
   	figure {
-  		width: calc(55% - 25px);
+  		width: calc(50% - 25px);
   		margin-left: 50px;
   		min-height: 350px;
 
@@ -40,7 +40,7 @@
   		display: flex;
   		flex-direction: column;
     	justify-content: space-between;
-  		width: calc(45% - 25px);
+  		width: calc(50% - 25px);
 
   		h3 {
   			margin-top: 0;
@@ -48,7 +48,7 @@
 
   		.button {
   			width: fit-content;
-  			max-width: 140px;
+  			max-width: 150px;
   		}
   	}
   }

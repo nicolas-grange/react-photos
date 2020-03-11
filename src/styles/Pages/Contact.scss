@@ -3,7 +3,7 @@
 	flex-direction: column;
 
 	.contact-info {
-		&>.pretitle-title {
+		.pretitle-title {
 			max-width: 400px;
     	
 			&::after {
@@ -21,6 +21,15 @@
 	}
 
 	/***
+	*** tablet portrait ***
+	***/
+	@media #{theme(media-queries, tablet-portrait)} {
+		.map-container {
+			display: flex;
+		}
+	}
+
+	/***
 	*** tablet landscape ***
 	***/
 	@media #{theme(media-queries, tablet-landscape)} {
@@ -34,29 +43,35 @@
 				width: 45%;
 				max-width: 550px;
 				min-width: 350px;
-				display: flex;
-				flex-direction: column;
+				
+				.wrapper-intern {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
 
-				&>.pretitle-title {
-		    	text-align: right;
-		    	margin-top: 0;
-		    	margin-right: 0;
+					.pretitle-title {
+			    	text-align: right;
+			    	margin-top: 0;
+			    	margin-right: 0;
+			    	margin-bottom: 0;
 
-					.title, 
-					.pretitle {
-						color: theme(color, light);
-					}
+						.title, 
+						.pretitle {
+							color: theme(color, light);
+						}
 
-					&::after {
-						right: 0;
-						left: inherit;
-						width: 100%;
-						bottom: 25px;
+						&::after {
+							right: 0;
+							left: inherit;
+							width: 100%;
+							bottom: 25px;
+						}
 					}
 				}
 			}
 
 			&.map-container {
+				display: inherit;
 				flex: 1;
 				position: relative;
 				overflow: hidden;
@@ -70,7 +85,7 @@
 	@media #{theme(media-queries, laptop)} {
 		section {
 			&.contact-info {
-				&>.pretitle-title {
+				.pretitle-title {
 		    	padding-top: 50px;
 		    }
 		  }

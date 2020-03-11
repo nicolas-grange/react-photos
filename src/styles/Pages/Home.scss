@@ -1,5 +1,21 @@
 .home-container {
+	width: 100%;
+	overflow: hidden;
+
+	section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		position: relative;
+
+		h3 {
+			color: theme(color, primary);
+			opacity: 1;
+		}
+	}
+
 	.introduction-section {
+		padding-top: 0;
+		padding-bottom: 0;
 		display: flex;
 		background-color: theme(color, dark);
 		flex-direction: column;
@@ -42,8 +58,94 @@
 		}
 	}
 
+	.about-section {
+		padding-top: 0;
+	}
+
 	.portfolio-section {
 		background: theme(color, grey-light);
+
+		&::before {
+			position: absolute;
+			width: 100vw;
+			height: 0;
+			left: 0;
+			content: "";
+			border-bottom: 50px solid theme(color, grey-light);
+			display: block;
+			top: 0;
+			border-left: 100vw solid theme(color, light);
+		}
+	}
+
+	.contact-section {
+		background: theme(color, dark);
+
+		&::before {
+			position: absolute;
+			width: 100vw;
+			height: 0;
+			left: 0;
+			content: "";
+			border-bottom: 50px solid transparent;
+			display: block;
+			top: 0;
+			border-left: 100vw solid theme(color, grey-light);
+		}
+
+		* {
+			color: theme(color, light);
+		}
+
+		.contact-infos-container {
+			position: relative;
+
+			p {
+				margin-top: 0;
+			}
+
+			ul {
+				padding-left: 40px;
+
+				li {
+					position: relative;
+
+					&::before {
+						content: "";
+						display: block;
+						border-radius: 50%;
+						width: 8px;
+						height: 8px;
+						background: theme(color, primary);
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: -20px;
+					}
+				}
+			}
+
+			.button {
+				margin-top: 50px;
+			}
+
+			span {
+				color: theme(color, light);
+        font-weight: 900;
+        display: block;
+        position: absolute;
+        text-transform: uppercase;
+        top: 0;
+        font-size: 225px;
+        letter-spacing: 10px;
+        left: 0;
+        opacity: 0.1;
+        z-index: 0;
+        white-space: nowrap;
+        pointer-events: none;
+        transform: translate(150px, -30px);
+			}
+		}	
 	}
 
 	/***
@@ -78,6 +180,11 @@
   *** tablet portrait ***
   ***/
   @media #{theme(media-queries, tablet-portrait)} {
+  	section {
+			padding-top: 70px;
+			padding-bottom: 60px;
+		}
+
   	.introduction-section {
   		.infos {
   			padding-left: 0;
@@ -111,12 +218,36 @@
 				bottom: 0;
 	  	}
   	}
+
+  	.portfolio-section {
+  		&::before {
+				border-bottom: 70px solid theme(color, grey-light);
+			}
+  	}
+
+  	.contact-section {
+  		text-align: center;
+
+  		&::before {
+  			border-bottom: 70px solid transparent;
+  		}
+
+  		.contact-infos-container {
+  			text-align: left;
+  			display: inline-block;
+  			margin: auto;
+  		}
+  	}
   }
 
   /***
   *** tablet landscape ***
   ***/
   @media #{theme(media-queries, tablet-landscape)} {
+  	section {
+			padding-top: 90px;
+			padding-bottom: 70px;
+		}
   
   	.introduction-section {
   		background: url("../../assets/images/home/intro-tablet.jpg") center no-repeat;
@@ -138,6 +269,40 @@
   		.social-networks {
 				max-height: 300px;
 	  	}
+  	}
+
+  	.portfolio-section {
+  		&::before {
+				border-bottom: 90px solid theme(color, grey-light);
+			}
+  	}
+
+  	.contact-section {
+  		&::before {
+  			border-bottom: 90px solid transparent;
+  		}
+  	}
+  }
+
+  /***
+  *** laptop ***
+  ***/
+  @media #{theme(media-queries, laptop)} {
+  	section {
+  		padding-top: 140px;
+  		padding-bottom: 80px;
+  	}
+
+  	.portfolio-section {
+  		&::before {
+				border-bottom: 130px solid theme(color, grey-light);
+			}
+  	}
+
+  	.contact-section {
+  		&::before {
+  			border-bottom: 130px solid transparent;
+  		}
   	}
   }
 }
