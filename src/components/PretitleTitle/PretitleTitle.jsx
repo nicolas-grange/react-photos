@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 class PretitleTitle extends React.Component {
 
@@ -8,8 +9,10 @@ class PretitleTitle extends React.Component {
 
     return (
       <div className="pretitle-title">
-        <p className="pretitle">{data.pretitle}</p>
-        <h2 className="title">{data.title}</h2>
+      	<Fade bottom>
+	        <p className="pretitle">{data.pretitle}</p>
+	        <h2 className="title">{data.title}</h2>
+	      </Fade>
       </div>
     );
   }

@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '../Button/Button';
 
 class ImageTextLink extends React.Component {
+
   render() {
     const data = this.props.data;
     return (

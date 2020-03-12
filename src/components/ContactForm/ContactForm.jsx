@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import OpenCloseForm from './OpenCloseForm';
 import FormElement from '../FormElement/FormElement';
 
@@ -22,18 +23,19 @@ class ContactForm extends React.Component {
     const formItems = this.props.data;
     const visible = this.state.visible;
 
-
     return (
-    	<div className={"contact-form wrapper-intern " + (visible === true ? 'visible' : 'invisible')}>
-        <form>
-          <FormElement data={formItems.name}/>
-          <FormElement data={formItems.mail}/>
-          <FormElement data={formItems.subject}/>
-          <FormElement data={formItems.message}/>
-          <input type="submit" value="Send" />            
-        </form>
-        <OpenCloseForm clickOpenClose={this.handleOpenClose} />
-      </div>
+      <Fade right>
+      	<div className={"contact-form wrapper-intern " + (visible === true ? 'visible' : 'invisible')}>
+          <form>
+            <FormElement data={formItems.name}/>
+            <FormElement data={formItems.mail}/>
+            <FormElement data={formItems.subject}/>
+            <FormElement data={formItems.message}/>
+            <input type="submit" value="Send" />            
+          </form>
+          <OpenCloseForm clickOpenClose={this.handleOpenClose} />
+        </div>
+      </Fade>      
     );
   }
 }

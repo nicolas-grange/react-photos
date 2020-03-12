@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import {
   withRouter
 } from 'react-router-dom';
@@ -12,11 +13,13 @@ class Footer extends React.Component {
     return(
       <footer className={'footer ' + (pathName === "/contact" ? "contact " : '') + (pathName === "/about" ? "about " : '') + (pathName === "/" ? "home " : '') + (pathName === "/privacy" ? "privacy " : '')}>
         <div className="wrapper-intern">
-          <SocialNetworks/>
-          <div className="privacy-copyright">
-            <a href="/privacy">Privacy</a>
-            <p>@ Daguet Photographie 2020</p>
-          </div>
+          <Fade bottom>
+            <SocialNetworks/>
+            <div className="privacy-copyright">
+              <a href="/privacy">Privacy</a>
+              <p>@ Daguet Photographie 2020</p>
+            </div>
+          </Fade>
         </div>
       </footer>
     );

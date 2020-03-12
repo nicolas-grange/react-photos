@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom';
 
 import Home from './components/Pages/Home';
@@ -9,6 +10,7 @@ import About from './components/Pages/About';
 import Portfolio from './components/Pages/Portfolio';
 import Contact from './components/Pages/Contact';
 import Privacy from './components/Pages/Privacy';
+import NotFound from './components/Pages/NotFound';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -66,7 +68,12 @@ class App extends React.Component {
       />
 	  ));
 
-		return routesList
+		return (
+      <Switch>
+        {routesList}
+        <Route component={NotFound} />
+      </Switch>
+    );
 	}
 
   render() {

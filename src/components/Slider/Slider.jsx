@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Fade from 'react-reveal/Fade';
 import Swiper from 'react-id-swiper';
 import Slide from './Slide';
 
@@ -30,10 +30,12 @@ class Slider extends React.Component {
 
     return (
     	<div className="slider-container">
-        <Swiper {...params}>
-          {slides}
-        </Swiper>
-        <div className="slider-pagination"></div>
+        <Fade bottom>
+          <Swiper {...params}>
+            {slides}
+          </Swiper>
+          <div className="slider-pagination"></div>
+        </Fade>
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import {
   BrowserRouter as Router,
   withRouter,
@@ -211,11 +212,15 @@ class Portfolio extends React.Component {
   		if(this.categoryExists(category)) {
   			const photos = this.getPhotosByCategory(category);
 	  		return (
-		      <GalleryPhotos photos={photos.photos} heightImg={photos.heightImg}/>
+	  			<Fade bottom>
+		      	<GalleryPhotos photos={photos.photos} heightImg={photos.heightImg}/>
+		      </Fade>
 		    );
   		} else {
   			return (
-					<h3 className="wrapper-intern">Error: category {category} doesn't exist...</h3>
+  				<Fade bottom>
+						<h3 className="wrapper-intern">Error: category {category} doesn't exist...</h3>
+		    	</Fade>
 		    );
   		}			
     };
@@ -226,9 +231,11 @@ class Portfolio extends React.Component {
     	<section className="portfolio-container">
     		<PretitleTitle className="wrapper-intern" data={data.pretitleTitle}/>
     		<Router>
-    			<nav className="portfolio-nav">
-    				<NavLinks links={links} />
-    			</nav>
+    			<Fade bottom>
+	    			<nav className="portfolio-nav">
+	    				<NavLinks links={links} />
+	    			</nav>
+	    		</Fade>
     			<Switch>
     				<Redirect exact from={this.portfolioUrl} to={this.portfolioUrl + "/all"}/>
     				<Route path={this.portfolioUrl + "/:category"} component={Gallery}/>

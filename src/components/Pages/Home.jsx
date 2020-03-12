@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import Logo from '../Logo/Logo';
 import Button from '../Button/Button';
@@ -121,21 +122,26 @@ class Home extends React.Component {
     const scrollGif = require("../../assets/gif/scroll.gif");
     return (
     	<div className="home-container">
-
 	    	<section className="introduction-section">
-	    		<Logo color="white"/>
-          <div className="infos">
-            <p>Photograph</p>
-            <h2>Margaux Daguet</h2>
-            <Button handleClick={this.handleClickDiscover} data={{label: 'Discover', path: '#about-section'}}/>
-          </div>
-          <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
+          <Fade top>
+	    		 <Logo color="white"/>
+          </Fade>
+          <Fade bottom>
+            <div className="infos">
+              <p>Photograph</p>
+              <h2>Margaux Daguet</h2>
+              <Button handleClick={this.handleClickDiscover} data={{label: 'Discover', path: '#about-section'}}/>
+            </div>
+            <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
+          </Fade>
           <SocialNetworks/>
 	    	</section>
 	    	<section id ="about-section" className="about-section">
           <div className="wrapper-intern">
             <PretitleTitle data={data.about.pretitleTitle}/>
-            <ImageTextLink data={data.about.imageTextLink}/>
+            <Fade bottom>
+              <ImageTextLink data={data.about.imageTextLink}/>
+            </Fade>
           </div>
         </section>
 	    	<section className="portfolio-section">
@@ -147,16 +153,18 @@ class Home extends React.Component {
 	    	<section className="contact-section">
           <div className="wrapper-intern">
             <PretitleTitle data={data.contact.pretitleTitle}/> 
-            <div className="contact-infos-container">
-              <p>Do not hesitate to contact me if:</p>
-              <ul>
-                <li>You like my work</li>
-                <li>You want more information</li>
-                <li>You have questions</li>
-              </ul>
-              <Button className="button" data={{label: 'Contact me', path: '/contact'}}/>
-              <span>Contact</span>
-            </div>
+            <Fade bottom>
+              <div className="contact-infos-container">
+                <p>Do not hesitate to contact me if:</p>
+                <ul>
+                  <li>You like my work</li>
+                  <li>You want more information</li>
+                  <li>You have questions</li>
+                </ul>
+                <Button className="button" data={{label: 'Contact me', path: '/contact'}}/>
+                <span>Contact</span>
+              </div>
+            </Fade>
           </div>
         </section>
     	</div>
