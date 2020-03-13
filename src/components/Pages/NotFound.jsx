@@ -1,8 +1,9 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+import Logo from '../Logo/Logo';
 import {
   withRouter
 } from 'react-router-dom';
+
 
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 import Button from '../Button/Button';
@@ -16,13 +17,12 @@ class NotFound extends React.Component {
   render() {
     return (
     	<section>
+    		<Logo color="dark"/>
 	    	<div className="wrapper-intern">
 	    		<PretitleTitle data={{pretitle: '404', title: 'Error'}}/>
-	    		<Fade bottom>
-		    		<h3>Page not found</h3>
-		    		<p>No match for <code>{this.props.location.pathname}</code></p>
-		    		<Button data={{label: 'Homepage', path: '/'}}/>
-		    	</Fade>
+	    		<h3>Page not found</h3>
+	    		<p>No match for <code>{this.props.location.pathname}</code></p>
+	    		<Button data={{label: 'Homepage', path: '/'}}/>
 	    	</div>
 	    </section>
     );

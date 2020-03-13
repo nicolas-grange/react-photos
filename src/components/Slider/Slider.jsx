@@ -8,6 +8,13 @@ import {ArrowRightIcon} from '../Icons';
 import 'swiper/css/swiper.css';
 
 class Slider extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
   render() {
 
     const slides = this.props.data.map((slide, index) => <Slide key={index} data={slide}/>);
@@ -26,6 +33,13 @@ class Slider extends React.Component {
       },
       renderPrevButton: () => <div className="slider-button slider-button-prev"><ArrowRightIcon/></div>,
       renderNextButton: () => <div className="slider-button slider-button-next"><ArrowRightIcon/></div>,
+      on: {
+        'slideChange': () => {
+          this.setState(
+            (prevState, props) => ({ count: prevState.count + 1 })
+          );
+        }
+      }
     };
 
     return (

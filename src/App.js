@@ -5,6 +5,7 @@ import {
   Switch
 } from 'react-router-dom';
 
+import Logo from './components/Logo/Logo';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Portfolio from './components/Pages/Portfolio';
@@ -56,6 +57,13 @@ const routes = [
 ];
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      colorLogo: 'dark',
+      bgLogo: ''
+    }
+  }
 
 	// get the routes components list
 	getRoutesComponents() {
@@ -90,7 +98,6 @@ class App extends React.Component {
 		    </div>
 		  </Router>
   	);
-
   }
 }
 

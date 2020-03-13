@@ -1,8 +1,14 @@
 .logo {
-  margin: 15px 15px 0;
+  padding: 15px 15px 0;
+  margin: 0;
+  z-index: 2;
+
+  &.bg-dark {
+  	background-color: theme(color, dark);
+  }
 
   a {
-    display: block;
+    display: inline-block;
 
     img {
       width: 100px;
@@ -13,6 +19,8 @@
 	*** tablet portrait ***
 	***/
 	@media #{theme(media-queries, tablet-portrait)} {
+		position: absolute;
+
 		a img {
 			width: 125px;
 		}

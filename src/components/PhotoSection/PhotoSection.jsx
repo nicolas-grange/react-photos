@@ -1,6 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
-
 
 class PhotoSection extends React.Component {
   render() {
@@ -8,11 +6,9 @@ class PhotoSection extends React.Component {
   	
     return (
     	<div className="photo-section">
-        <Fade left>
-      		<figure>
-      			<img src={photoAbout} alt="Daguet Photographie"/>
-      		</figure>
-        </Fade>
+    		<figure>
+    			<img src={photoAbout} alt="Daguet Photographie"/>
+    		</figure>
     	</div>
     );
   }

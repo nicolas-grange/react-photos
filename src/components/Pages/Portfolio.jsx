@@ -1,5 +1,5 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+import Logo from '../Logo/Logo';
 import {
   BrowserRouter as Router,
   withRouter,
@@ -212,15 +212,11 @@ class Portfolio extends React.Component {
   		if(this.categoryExists(category)) {
   			const photos = this.getPhotosByCategory(category);
 	  		return (
-	  			<Fade bottom>
-		      	<GalleryPhotos photos={photos.photos} heightImg={photos.heightImg}/>
-		      </Fade>
+		      <GalleryPhotos photos={photos.photos} heightImg={photos.heightImg}/>
 		    );
   		} else {
   			return (
-  				<Fade bottom>
-						<h3 className="wrapper-intern">Error: category {category} doesn't exist...</h3>
-		    	</Fade>
+					<h3 className="wrapper-intern">Error: category {category} doesn't exist...</h3>
 		    );
   		}			
     };
@@ -228,20 +224,21 @@ class Portfolio extends React.Component {
     const links = this.createNestedLinks();
 
     return (
-    	<section className="portfolio-container">
-    		<PretitleTitle className="wrapper-intern" data={data.pretitleTitle}/>
-    		<Router>
-    			<Fade bottom>
+    	<div>
+    		<Logo color="dark"/>
+	    	<section className="portfolio-container">
+	    		<PretitleTitle className="wrapper-intern" data={data.pretitleTitle}/>
+	    		<Router>
 	    			<nav className="portfolio-nav">
 	    				<NavLinks links={links} />
 	    			</nav>
-	    		</Fade>
-    			<Switch>
-    				<Redirect exact from={this.portfolioUrl} to={this.portfolioUrl + "/all"}/>
-    				<Route path={this.portfolioUrl + "/:category"} component={Gallery}/>
-    			</Switch>
-        </Router>	
-    	</section>
+	    			<Switch>
+	    				<Redirect exact from={this.portfolioUrl} to={this.portfolioUrl + "/all"}/>
+	    				<Route path={this.portfolioUrl + "/:category"} component={Gallery}/>
+	    			</Switch>
+	        </Router>	
+	    	</section>
+	    </div>
     );
   }
 }

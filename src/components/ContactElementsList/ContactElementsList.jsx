@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import {PhoneIcon, EmailIcon, AddressIcon} from '../Icons';
 
 
@@ -49,13 +48,11 @@ class ContactElementsList extends React.Component {
   render() {
   	const contactElements = this.props.data;
     return (
-    	<Fade bottom>
-	    	<ul className="contact-elements-list">
-	        <ContactElementsItem data={contactElements.mail}/>
-		      <ContactElementsItem data={contactElements.tel}/>
-		      <ContactElementsItem data={contactElements.address}/>
-	      </ul>
-	    </Fade>
+    	<ul className="contact-elements-list">
+        <ContactElementsItem data={contactElements.mail}/>
+	      <ContactElementsItem data={contactElements.tel}/>
+	      <ContactElementsItem data={contactElements.address}/>
+      </ul>
     );
   }
 }

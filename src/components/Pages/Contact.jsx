@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Logo from '../Logo/Logo';
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 import ContactElementsList from '../ContactElementsList/ContactElementsList';
 import GoogleMap from '../GoogleMap/GoogleMap';
@@ -79,24 +79,52 @@ const data = {
 
 class Contact extends React.Component {
 
+	constructor(props) {
+		super(props);
+		this.updateColorLogo = this.updateColorLogo.bind(this);
+		this.state = {
+			colorLogo: 'dark'
+		};
+	}
+
 	componentDidMount() {
 		window.top.window.scrollTo(0,0);
+		window.addEventListener("resize", this.updateColorLogo);
+		this.updateColorLogo();
+	}
+
+	componentWillUnmount() {
+    window.removeEventListener("resize", this.updateColorLogo);
+  }
+
+	updateColorLogo() {
+		let colorLogo = 'black';
+		if(window.matchMedia("only screen and (min-width : 1024px)").matches) {
+			colorLogo = 'white';
+		}
+
+		this.setState({
+			colorLogo: colorLogo
+		});
 	}
 
   render() {
     return (
-    	<div className="contact-container">
-	    	<section className="contact-info">
-	    		<div className="wrapper-intern">
-	    			<PretitleTitle data={data.pretitleTitle}/>
-	    			<ContactElementsList data={data.contactElementsList}/>
-	    		</div>
-	    	</section>
-	    	<section className="map-container">
-	    		<GoogleMap className="map" data={data.map}/>
-	    		<ContactForm data={data.form}/>
-	    	</section>
-    	</div>
+    	<div>
+    		<Logo color={this.state.colorLogo}/>
+	    	<div className="contact-container">
+		    	<section className="contact-info">
+		    		<div className="wrapper-intern">
+		    			<PretitleTitle data={data.pretitleTitle}/>
+		    			<ContactElementsList data={data.contactElementsList}/>
+		    		</div>
+		    	</section>
+		    	<section className="map-container">
+		    		<GoogleMap className="map" data={data.map}/>
+		    		<ContactForm data={data.form}/>
+		    	</section>
+	    	</div>
+	    </div>
     );
   }
 }
