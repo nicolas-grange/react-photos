@@ -81,20 +81,38 @@ class Contact extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.updateColorLogo = this.updateColorLogo.bind(this);
+		this.updateResize = this.updateResize.bind(this);
 		this.state = {
-			colorLogo: 'dark'
+			colorLogo: 'dark',
+			paddingPretitleTitle: '50px'
 		};
 	}
 
 	componentDidMount() {
 		window.top.window.scrollTo(0,0);
-		window.addEventListener("resize", this.updateColorLogo);
-		this.updateColorLogo();
+		window.addEventListener("resize", this.updateResize);
+		this.updateResize();
 	}
 
 	componentWillUnmount() {
-    window.removeEventListener("resize", this.updateColorLogo);
+    window.removeEventListener("resize", this.updateResize);
+  }
+
+  updateResize() {
+  	this.updateColorLogo();
+  	this.updatePretitleTitle();
+  }
+
+  updatePretitleTitle() {
+  	const height = window.innerHeight;
+  	let padding = '';
+  	if(height < 670 && window.matchMedia("only screen and (min-width : 1024px)").matches) {
+  		padding = "20px"
+  	} 
+
+  	this.setState({
+  		paddingPretitleTitle: padding
+  	});
   }
 
 	updateColorLogo() {
@@ -109,13 +127,18 @@ class Contact extends React.Component {
 	}
 
   render() {
+  	const stylePretitleTitle = {
+  		paddingTop: this.state.paddingPretitleTitle,
+  		paddingBottom: this.state.paddingPretitleTitle
+  	}
+
     return (
     	<div>
     		<Logo color={this.state.colorLogo}/>
 	    	<div className="contact-container">
 		    	<section className="contact-info">
 		    		<div className="wrapper-intern">
-		    			<PretitleTitle data={data.pretitleTitle}/>
+		    			<PretitleTitle customStyle={stylePretitleTitle} data={data.pretitleTitle}/>
 		    			<ContactElementsList data={data.contactElementsList}/>
 		    		</div>
 		    	</section>

@@ -5,7 +5,6 @@ import {
   Switch
 } from 'react-router-dom';
 
-import Logo from './components/Logo/Logo';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Portfolio from './components/Pages/Portfolio';
