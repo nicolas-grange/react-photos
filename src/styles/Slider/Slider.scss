@@ -10,6 +10,17 @@
 		left: inherit;
 	}
 
+	.slider-swipe {
+		width: 40px;
+		position: absolute;
+		right: 0;
+		top: 270px;
+
+		svg {
+			animation: rotation 4s infinite linear;
+		}
+	}
+
 	.slider-button {
 		padding: 5px;
 		width: 30px;
@@ -42,6 +53,10 @@
   		right: 135px;
   	}
 
+  	.slider-swipe {
+			top: 320px;
+		}
+
   	.slider-button {
 			padding: 5px 15px;
 			width: 55px;
@@ -65,4 +80,31 @@
 			}
 		}
   }
+
+  /***
+	*** tablet portrait ***
+	***/
+	@media #{theme(media-queries, tablet-portrait)} {
+		.slider-swipe {
+			display: none;
+		}
+	}
+}
+
+@keyframes rotation { 
+	0% { 
+		transform: rotate(0deg); 
+	}
+
+	10% {
+		transform: rotate(-22deg);
+	}
+
+	30% {
+		transform: rotate(22deg);
+	}
+
+	40% {
+		transform: rotate(0deg);
+	}
 }

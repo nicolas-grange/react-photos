@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Swiper from 'react-id-swiper';
 import Slide from './Slide';
 
-import {ArrowRightIcon} from '../Icons';
+import {ArrowRightIcon, SwipeIcon} from '../Icons';
 
 import 'swiper/css/swiper.css';
 
@@ -49,6 +49,7 @@ class Slider extends React.Component {
             {slides}
           </Swiper>
           <div className="slider-pagination"></div>
+          {this.state.count < 2 ? (<div className="slider-swipe"><SwipeIcon/></div>) : ''}
         </Fade>
       </div>
     );
