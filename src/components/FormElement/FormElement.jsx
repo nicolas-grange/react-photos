@@ -17,6 +17,7 @@ class FormElement extends React.Component {
     this.setState({
       empty: e.target.value.trim().length > 0 ? false : true
     });
+    this.props.updateValue(e);
   }
 
   handleFocus() {
@@ -34,8 +35,9 @@ class FormElement extends React.Component {
   createInputField(field) {
     return(
       <input 
-        name = {field.name ? field.name : ''}
-        type={field.type ? field.type : ''} 
+        name={field.name ? field.name : ''}
+        value={field.item.value ? field.item.value : ''}
+        type={field.item.type ? field.item.type : ''} 
         onChange={this.handleChange} 
         onFocus={this.handleFocus} 
         onBlur={this.handleBlur} 
@@ -46,7 +48,8 @@ class FormElement extends React.Component {
   createTextareaField(field) {
     return(
       <textarea 
-        name = {field.name ? field.name : ''}
+        name={field.name ? field.name : ''}
+        value={field.item.value ? field.item.value : ''}
         onChange={this.handleChange} 
         onFocus={this.handleFocus} 
         onBlur={this.handleBlur}>

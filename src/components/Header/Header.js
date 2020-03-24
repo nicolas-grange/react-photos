@@ -15,8 +15,8 @@ class Header extends React.Component {
 
   // open/close menu
   handleClick(e) {
-		// test if it's not an input element
-		if(e.target.tagName !== "INPUT") {
+		// test if it's not an input element or button
+		if(e.target.tagName !== "INPUT" && e.target.tagName !== "BUTTON") {
 			this.setState((prevState, props) => ({
 				open: prevState.open === true ? false : true
 			}));

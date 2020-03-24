@@ -26,21 +26,13 @@
 		}
 	}
 
-	/***
-	*** laptop ***
-	***/
-	@media #{theme(media-queries, laptop)} {
-		a img {
-			width: 150px;
-		}
-	}
 
 	/***
 	*** desktop ***
 	***/
 	@media #{theme(media-queries, desktop)} {
 		a img {
-			width: 175px;
+			width: 150px;
 		}
 	}
 }

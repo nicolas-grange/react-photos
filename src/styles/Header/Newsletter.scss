@@ -28,6 +28,21 @@
 					border-bottom: 1px solid theme(color, primary);
 					text-transform: inherit;
 					font-weight: 200;
+
+					&.message {
+						border-bottom: none;
+						font-weight: 400;
+						padding-bottom: 0;
+						margin-bottom: 0;
+
+						&.success {
+							color: theme(color, primary);
+						}
+
+						&.error {
+							color: theme(color, secondary);
+						}
+					}
 				}
 
 				form {
@@ -56,6 +71,7 @@
 
 						svg {
 							width: 20px;
+							pointer-events: none;
 
 							path {
 								fill: theme(color, light);

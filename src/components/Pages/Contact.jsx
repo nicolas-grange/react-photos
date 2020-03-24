@@ -41,39 +41,6 @@ const data = {
 			lat: 47.3850462, 
 			lng: 0.6749002
 		}
-	}, 
-	form: {
-		name:  {
-	    name: "name",
-	    label: "Name",
-	    item: {
-	      kind: "input",
-	      type: "text"
-	    }
-	  },
-	  mail: {
-	    name: "email",
-	    label: "E-mail",
-	    item: {
-	      kind: "input",
-	      type: "email"
-	    }
-	  },
-	  subject: {
-	    name: "subject",
-	    label: "Subject",
-	    item: {
-	      kind: "input",
-	      type: "text"
-	    }
-	  },
-	  message: {
-	    name: "message",
-	    label: "Tap your message",
-	    item: {
-	      kind: "textarea"
-	    }
-	  }
 	}
 }
 
@@ -144,7 +111,7 @@ class Contact extends React.Component {
 		    	</section>
 		    	<section className="map-container">
 		    		<GoogleMap className="map" data={data.map}/>
-		    		<ContactForm data={data.form}/>
+		    		<ContactForm />
 		    	</section>
 	    	</div>
 	    </div>
