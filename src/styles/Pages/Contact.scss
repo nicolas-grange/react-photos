@@ -41,7 +41,7 @@
 			&.contact-info {
 				background-color: theme(color, dark);
 				width: 45%;
-				max-width: 550px;
+				max-width: 600px;
 				min-width: 350px;
 				
 				.wrapper-intern {
@@ -56,6 +56,7 @@
 			    	margin-bottom: 0;
 			    	padding-top: 50px;
 			    	padding-bottom: 50px;
+			    	padding-right: 0;
 
 						.title, 
 						.pretitle {
@@ -81,5 +82,18 @@
 		}
 	}
 
-	
+	/***
+	*** desktop ***
+	***/
+	@media #{theme(media-queries, desktop)} {
+		section {
+			&.contact-info {
+				max-width: 700px;
+
+				.pretitle-title {
+					max-width: inherit;
+				}
+			}
+		}
+	}
 }

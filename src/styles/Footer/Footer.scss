@@ -95,7 +95,7 @@
 
 		&.contact {
 			width: 45%;
-			max-width: 550px;
+			max-width: 600px;
 			border: none;
 			padding: 0;
 			position: absolute;
@@ -134,5 +134,20 @@
 	@media #{theme(media-queries, laptop)} {
 		padding: 80px 0;
 		margin-top: 80px;
+	}
+
+	/***
+	*** desktop ***
+	***/
+	@media #{theme(media-queries, desktop)} {
+		&.contact {
+			max-width: 700px;
+
+			.social-networks {
+				min-height: 350px;
+				height: 100%;
+				justify-content: space-between;
+			}
+		}
 	}
 }

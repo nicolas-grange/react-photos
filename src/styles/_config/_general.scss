@@ -60,3 +60,34 @@ ol {
 		max-width: 1000px; 
 	}
 }
+
+
+
+
+
+
+
+@media #{theme(media-queries, desktop)} {
+
+	.wrapper-intern {
+		max-width: 1100px; 
+	}
+
+	p, h4, h5, address, a {
+		font-size: 1.1em;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+}
+
+
+
+
+
+@media #{theme(media-queries, desktop-xl)} {
+	* {
+		background: red;
+	}
+}

@@ -46,6 +46,7 @@
 		.scroll-icon {
 			display: none;
 		}
+		
 		.social-networks {
 			margin: 0 auto 15px;
 			width: 100%;
@@ -303,6 +304,49 @@
   	.contact-section {
   		&::before {
   			border-bottom: 130px solid transparent;
+  		}
+  	}
+  }
+
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+  	section {
+  		padding-top: 140px;
+  		padding-bottom: 100px;
+  	}
+
+  	.introduction-section {
+  		.infos {
+  			p {
+					font-size: 40px;
+				}
+
+				h2 {
+					font-size: 65px;
+					line-height: 75px;
+				}
+  		}
+
+  		.scroll-icon {
+				width: 70px;
+			}
+
+  		.social-networks {
+				max-height: 350px;
+	  	}
+  	}
+
+  	.portfolio-section {
+  		&::before {
+				border-bottom: 180px solid theme(color, grey-light);
+			}
+  	}
+
+  	.contact-section {
+  		&::before {
+  			border-bottom: 180px solid transparent;
   		}
   	}
   }

@@ -1,9 +1,9 @@
 .button {
 	border: 1px solid theme(color, primary);
-	padding: 15px 35px 15px 10px;
+	padding: 18px 45px 18px 20px;
 	background-color: theme(color, dark);
 	color: theme(color, light);
-	font-size: 18px;
+	font-size: 1.1em;
 	position: relative;
 	transition: background-color 500ms, color 500ms;
 	display: inline-block;
@@ -13,7 +13,7 @@
 		height: 15px;
 		position: absolute;
 		top: 50%;
-		right: 10px;
+		right: 15px;
 		transform: translateY(-50%);
 		transition: transform 500ms;
 
@@ -33,5 +33,12 @@
     		transform: translate(5px, -50%);
     	}
     }
+  }
+
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+  	font-size: 1.2em;
   }
 }

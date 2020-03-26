@@ -60,4 +60,19 @@
 			font-size: 60px;
 		}
   }
+
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+  	padding: 100px;
+
+  	.pretitle {
+			font-size: 22px;
+		}
+
+		.title {
+			font-size: 70px;
+		}
+  }
 }

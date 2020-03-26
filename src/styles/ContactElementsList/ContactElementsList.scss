@@ -129,6 +129,32 @@
 				}
 			}
 		}
+	}
 
+	/***
+	*** desktop ***
+	***/
+	@media #{theme(media-queries, desktop)} {
+		padding-left: 200px;
+		max-height: 400px;
+
+		li {
+			&.contact-element-container,
+			.contact-element-container {
+
+				svg {
+					width: 35px;
+					height: 35px;
+				}
+			}
+
+			&.contact-element-container {
+				span {
+					&.title {
+						font-size: 1.1em;
+					}	
+				}
+			}
+		}
 	}
 }
