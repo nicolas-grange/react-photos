@@ -52,5 +52,29 @@
     	}
     }
   }
+
+  /***
+  *** desktop xl ***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+    a {
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+    a {
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
 }
 

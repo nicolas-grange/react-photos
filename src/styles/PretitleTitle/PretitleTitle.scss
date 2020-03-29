@@ -75,4 +75,34 @@
 			font-size: 70px;
 		}
   }
+
+  /***
+  *** desktop xl ***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+  	padding: 120px;
+
+  	.pretitle {
+			font-size: 26px;
+		}
+
+		.title {
+			font-size: 85px;
+		}
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+  	padding: 150px;
+
+  	.pretitle {
+			font-size: 30px;
+		}
+
+		.title {
+			font-size: 95px;
+		}
+  }
 }

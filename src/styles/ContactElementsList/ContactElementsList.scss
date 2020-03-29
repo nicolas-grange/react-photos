@@ -139,6 +139,7 @@
 		max-height: 400px;
 
 		li {
+			font-size: inherit;
 			&.contact-element-container,
 			.contact-element-container {
 
@@ -152,6 +153,40 @@
 				span {
 					&.title {
 						font-size: 1.1em;
+					}	
+				}
+			}
+		}
+	}
+
+	/***
+	*** desktop xl ***
+	***/
+	@media #{theme(media-queries, desktop-xl)} {
+		max-height: 500px;
+
+		li {
+			&.contact-element-container {
+				span {
+					&.title {
+						font-size: 1.4em;
+					}	
+				}
+			}
+		}
+	}
+
+	/***
+	*** desktop xxl ***
+	***/
+	@media #{theme(media-queries, desktop-xxl)} {
+		max-height: 550px;
+
+		li {
+			&.contact-element-container {
+				span {
+					&.title {
+						font-size: 1.7em;
 					}	
 				}
 			}

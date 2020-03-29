@@ -17,10 +17,10 @@ const data = {
     imageTextLink: {
       img: {
         src: require("../../assets/images/about/about.jpg"),
-        alt: "Daguet Photographie"
+        alt: "Nicolas Photography"
       },
       textLink: {
-        title: "Margaux Daguet",
+        title: "Nicolas Grange",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero nunc, placerat quis porttitor venenatis, suscipit ut ex. Ut varius, eros vel gravida varius, magna nunc mollis sem, sit amet lacinia est purus sed justo. Vestibulum a porttitor metus. Ut vitae interdum libero. Aenean vulputate mollis placerat. Maecenas ut volutpat purus. Nulla at porta sem, quis tincidunt enim. Mauris eu diam ligula.",
         link: {
           label: "Read more",
@@ -38,7 +38,7 @@ const data = {
       {
         img: {
           src: require("../../assets/images/portfolio/landscapes/1.jpg"),
-          alt: "Daguet Photographie"
+          alt: "Nicolas Photography"
         },
         textLink: {
           title: "All",
@@ -52,7 +52,7 @@ const data = {
       {
         img: {
           src: require("../../assets/images/portfolio/portraits/1.jpg"),
-          alt: "Daguet Photographie"
+          alt: "Nicolas Photography"
         },
         textLink: {
           title: "Portraits",
@@ -66,7 +66,7 @@ const data = {
       {
         img: {
           src: require("../../assets/images/portfolio/landscapes/2.jpg"),
-          alt: "Daguet Photographie"
+          alt: "Nicolas Photography"
         },
         textLink: {
           title: "Landscapes",
@@ -80,7 +80,7 @@ const data = {
       {
         img: {
           src: require("../../assets/images/portfolio/animals/2.jpg"),
-          alt: "Daguet Photographie"
+          alt: "Nicolas Photography"
         },
         textLink: {
           title: "Animals",
@@ -129,7 +129,7 @@ class Home extends React.Component {
           <Fade bottom>
             <div className="infos">
               <p>Photograph</p>
-              <h2>Margaux Daguet</h2>
+              <h2>Nicolas Grange</h2>
               <Button handleClick={this.handleClickDiscover} data={{label: 'Discover', path: '#about-section'}}/>
             </div>
             <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>

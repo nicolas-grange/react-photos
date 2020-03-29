@@ -14,8 +14,8 @@ class Privacy extends React.Component {
     		<Logo color="dark"/>
 	    	<section className="privacy-container">
 		    	<div className="wrapper-intern">
-		    		<PretitleTitle data={{pretitle: 'Daguet Photography', title: 'Privacy'}}/>
-		    		<h3>Privacy Policy of https://www.daguetphotography.com</h3>
+		    		<PretitleTitle data={{pretitle: 'Nicolas Photography', title: 'Privacy'}}/>
+		    		<h3>Privacy Policy of https://www.nicolasphotography.com</h3>
 		    		<p>At Daguet Photography, we collect and manage user data according to the following Privacy Policy.</p>
 		    		<h3>Data Collected</h3>
 		    		<p>We collect information you provide directly to us. For example, we collect information when you create an account, subscribe, participate in any interactive features of our services, fill out a form, request customer support or otherwise communicate with us. The types of information we may collect include your name, email address, postal address, credit card information and other contact or identifying information you choose to provide.</p>

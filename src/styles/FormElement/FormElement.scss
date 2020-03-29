@@ -6,7 +6,6 @@
 	padding: 20px;
 	border: 1px solid theme(color, border);
 
-
 	label {
 		color: theme(color, grey);
 		position: absolute;
@@ -55,4 +54,100 @@
 	&.textarea {
 		min-height: 150px;
 	}
+
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+		min-height: 55px;
+
+		label {
+			top: 20px;
+			font-size: 16px;
+			line-height: 12px;
+
+			&.focus {
+				top: 10px;
+				font-size: 14px;
+			}
+		}
+
+		input, textarea {
+			font-size: 17px;
+			padding: 25px 20px 10px;
+		}
+
+		input {
+			height: 55px;
+		}
+
+		textarea {
+			padding-top: 0;
+			top: 25px;
+		}
+  }
+
+  /***
+  *** desktop xl***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+		min-height: 60px;
+
+		label {
+			top: 20px;
+			font-size: 18px;
+			line-height: 14px;
+
+			&.focus {
+				top: 10px;
+				font-size: 16px;
+			}
+		}
+
+		input, textarea {
+			font-size: 18px;
+			padding: 30px 20px 10px;
+		}
+
+		input {
+			height: 60px;
+		}
+
+		textarea {
+			padding-top: 0;
+			top: 30px;
+		}
+  }
+
+  /***
+  *** desktop xxl***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+		min-height: 70px;
+
+		label {
+			top: 28px;
+			font-size: 22px;
+			line-height: 14px;
+
+			&.focus {
+				top: 10px;
+				font-size: 20px;
+			}
+		}
+
+		input, textarea {
+			font-size: 22px;
+			padding: 25px 20px 15px;
+		}
+
+		input {
+			height: 70px;
+		}
+
+		textarea {
+			padding-top: 0;
+			top: 35px;
+		}
+  }
 }

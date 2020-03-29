@@ -42,9 +42,57 @@
   @media #{theme(media-queries, laptop)} {
 		.portfolio-nav {
     	ul {
-    		padding-bottom: 60px;
-    		font-size: 22px;
-    	}
+    		padding-bottom: 70px;
+
+    		li a {
+	    		font-size: 24px;
+	    	}
+	    }
+    }
+  }
+
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+		.portfolio-nav {
+			ul {
+				padding-bottom: 80px;
+
+				li a {
+	    		font-size: 30px;
+	    	}
+			}
+    }
+  }
+
+  /***
+  *** desktop xl ***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+		.portfolio-nav {
+			ul {
+				padding-bottom: 90px;
+
+				li a {
+	    		font-size: 34px;
+	    	}
+			}
+    }
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+		.portfolio-nav {
+			ul {
+				padding-bottom: 100px;
+
+				li a {
+	    		font-size: 38px;
+	    	}
+			}
     }
   }
 }

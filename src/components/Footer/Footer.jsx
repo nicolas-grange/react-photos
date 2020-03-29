@@ -17,7 +17,7 @@ class Footer extends React.Component {
             <SocialNetworks/>
             <div className="privacy-copyright">
               <a href="/privacy">Privacy</a>
-              <p>@ Daguet Photographie 2020</p>
+              <p>@ Nicolas Photography 2020</p>
             </div>
           </Fade>
         </div>

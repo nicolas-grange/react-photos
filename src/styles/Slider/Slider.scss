@@ -8,6 +8,7 @@
 		z-index: 2;
 		width: inherit;
 		left: inherit;
+		font-size: 1em;
 	}
 
 	.slider-swipe {
@@ -87,6 +88,60 @@
 	@media #{theme(media-queries, tablet-portrait)} {
 		.slider-swipe {
 			display: none;
+		}
+	}
+
+	/***
+	*** desktop ***
+	***/
+	@media #{theme(media-queries, desktop)} {
+		.slider-pagination {
+			font-size: 1.1em;
+			right: 145px;
+		}
+
+		.slider-button {
+			width: 60px;
+
+			&.slider-button-prev {
+				right: 60px;
+			}
+		}
+	}
+
+	/***
+	*** desktop xl ***
+	***/
+	@media #{theme(media-queries, desktop-xl)} {
+		.slider-pagination {
+			font-size: 1.4em;
+			right: 190px;
+		}
+
+		.slider-button {
+			width: 70px;
+
+			&.slider-button-prev {
+				right: 70px;
+			}
+		}
+	}
+
+	/***
+	*** desktop xxl ***
+	***/
+	@media #{theme(media-queries, desktop-xxl)} {
+		.slider-pagination {
+			font-size: 1.7em;
+			right: 230px;
+		}
+
+		.slider-button {
+			width: 80px;
+
+			&.slider-button-prev {
+				right: 80px;
+			}
 		}
 	}
 }

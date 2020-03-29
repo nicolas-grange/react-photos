@@ -227,11 +227,28 @@
       // main menu
       .main-menu {
         max-width: 1200px;
+
+        li {
+          font-size: inherit;
+        }
       }
 
       // social menu
       .social-menu {
         height: 400px;
+      }
+    }
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+    .navigation {
+
+      // social menu
+      .social-menu {
+        height: 500px;
       }
     }
   }

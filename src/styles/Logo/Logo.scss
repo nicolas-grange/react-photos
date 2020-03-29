@@ -26,13 +26,30 @@
 		}
 	}
 
-
 	/***
 	*** desktop ***
 	***/
 	@media #{theme(media-queries, desktop)} {
 		a img {
 			width: 150px;
+		}
+	}
+
+	/***
+	*** desktop xl***
+	***/
+	@media #{theme(media-queries, desktop-xl)} {
+		a img {
+			width: 180px;
+		}
+	}
+
+	/***
+	*** desktop xxl***
+	***/
+	@media #{theme(media-queries, desktop-xxl)} {
+		a img {
+			width: 200px;
 		}
 	}
 }

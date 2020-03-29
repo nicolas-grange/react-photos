@@ -27,31 +27,31 @@ const data = {
 			    src: require("../../assets/images/portfolio/portraits/1.jpg"),
 			    width: 3,
 			    height: 2,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/portraits/2.jpg"),
 			    width: 2,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/portraits/3.jpg"),
 			    width: 2,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/portraits/4.jpg"),
 			    width: 2,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/portraits/5.jpg"),
 			    width: 2,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  }
 			]
 		},
@@ -64,37 +64,37 @@ const data = {
 			    src: require("../../assets/images/portfolio/animals/1.jpg"),
 			    width: 2,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/animals/2.jpg"),
 			    width: 4,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/animals/3.jpg"),
 			    width: 4,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/animals/4.jpg"),
 			    width: 3,
 			    height: 4,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/animals/5.jpg"),
 			    width: 3,
 			    height: 4,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/animals/6.jpg"),
 			    width: 4,
 			    height: 3,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  }
 			]
 		},
@@ -107,37 +107,37 @@ const data = {
 			    src: require("../../assets/images/portfolio/landscapes/1.jpg"),
 			    width: 3,
 			    height: 2,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/landscapes/2.jpg"),
 			    width: 3,
 			    height: 2,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/landscapes/3.jpg"),
 			    width: 3,
 			    height: 2,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/landscapes/4.jpg"),
 			    width: 3,
 			    height: 2,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/landscapes/5.jpg"),
 			    width: 3,
 			    height: 2,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/landscapes/6.jpg"),
 			    width: 3,
 			    height: 2,
-			    alt: "Daguet Photographie"
+			    alt: "Nicolas Photography"
 			  }
 			]
 		}

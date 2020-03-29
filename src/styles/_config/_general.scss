@@ -27,7 +27,6 @@ ol {
 	margin: 0;
 }
 
-
 .wrapper-intern {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -40,8 +39,6 @@ ol {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
 
 /***
 *** smartphone xxl ***
@@ -61,19 +58,15 @@ ol {
 	}
 }
 
-
-
-
-
-
-
+/***
+*** desktop ***
+***/
 @media #{theme(media-queries, desktop)} {
-
 	.wrapper-intern {
 		max-width: 1100px; 
 	}
 
-	p, h4, h5, address, a {
+	p, h4, h5, address, a, li, input {
 		font-size: 1.1em;
 	}
 
@@ -82,12 +75,37 @@ ol {
 	}
 }
 
-
-
-
-
+/***
+*** desktop xl ***
+***/
 @media #{theme(media-queries, desktop-xl)} {
-	* {
-		background: red;
+	.wrapper-intern {
+		max-width: 1200px; 
+	}
+
+	p, h4, h5, address, a, li, input {
+		font-size: 1.4em;
+	}
+
+	h3 {
+		font-size: 34px;
+	}
+}
+
+/***
+*** desktop xxl ***
+***/
+@media #{theme(media-queries, desktop-xxl)} {
+
+	.wrapper-intern {
+		max-width: 1400px; 
+	}
+
+	p, h4, h5, address, a, li, input {
+		font-size: 1.7em;
+	}
+
+	h3 {
+		font-size: 40px;
 	}
 }

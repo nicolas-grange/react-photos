@@ -92,4 +92,86 @@
 			}
 		}
 	}
+
+	/***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+		.open-close-form {
+			right: -55px;
+			padding: 25px 10px;
+			width: 55px;
+			height: 55px;
+
+			span {
+				width: 23px;
+				height: 3px;
+
+				&::before,
+				&::after {
+					width: 12px;
+					height: 3px;
+				}
+
+				&::before {
+					top: -4px;
+				}
+
+				&::after {
+					top: 4px;
+				}
+			}
+		}
+
+		&.invisible {
+			.open-close-form {
+				span {
+					&::before,
+					&::after {
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+		.open-close-form {
+			right: -60px;
+			padding: 29px 10px;
+			width: 60px;
+			height: 60px;
+
+			span {
+				width: 30px;
+
+				&::before,
+				&::after {
+					width: 15px;
+				}
+
+				&::before {
+					top: -5px;
+				}
+
+				&::after {
+					top: 5px;
+				}
+			}
+		}
+
+		&.invisible {
+			.open-close-form {
+				span {
+					&::before,
+					&::after {
+						margin-left: 16px;
+					}
+				}
+			}
+		}
+  }
 }

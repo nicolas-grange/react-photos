@@ -68,6 +68,10 @@
 		padding: 60px 0;
 		margin-top: 60px;
 
+		.privacy-copyright {
+			padding-top: 60px;
+		}
+
 		&.about {
 			width: 50%;
 			margin-left: 50%;
@@ -92,6 +96,10 @@
 	@media #{theme(media-queries, tablet-landscape)} {
 		padding: 70px 0;
 		margin-top: 70px;
+
+		.privacy-copyright {
+			padding-top: 55px;
+		}
 
 		&.contact {
 			width: 45%;
@@ -134,12 +142,23 @@
 	@media #{theme(media-queries, laptop)} {
 		padding: 80px 0;
 		margin-top: 80px;
+
+		.privacy-copyright {
+			padding-top: 60px;
+		}
 	}
 
 	/***
 	*** desktop ***
 	***/
 	@media #{theme(media-queries, desktop)} {
+		padding: 100px 0;
+		margin-top: 100px;
+
+		.privacy-copyright {
+			padding-top: 70px;
+		}
+
 		&.contact {
 			max-width: 700px;
 
@@ -147,6 +166,80 @@
 				min-height: 350px;
 				height: 100%;
 				justify-content: space-between;
+
+				li {
+					a {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+
+					&:first-of-type {
+						a {
+							padding-left: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/***
+	*** desktop xl***
+	***/
+	@media #{theme(media-queries, desktop-xl)} {
+		padding: 120px 0;
+		margin-top: 120px;
+
+		.privacy-copyright {
+			padding-top: 80px;
+		}
+
+		.wrapper-intern {
+			max-width: 1200px;
+		}
+
+		&.contact {
+			max-width: 1000px;
+
+			.social-networks {
+				min-height: 400px;
+
+				li {
+					a {
+						padding-left: 35px;
+						padding-right: 35px;
+					}
+
+					&:first-of-type {
+						a {
+							padding-left: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/***
+	*** desktop xxl***
+	***/
+	@media #{theme(media-queries, desktop-xxl)} {
+		padding: 150px 0;
+		margin-top: 150px;
+
+		.privacy-copyright {
+			padding-top: 90px;
+		}
+
+		.wrapper-intern {
+			max-width: 1400px;
+		}
+
+		&.contact {
+			max-width: 1100px;
+
+			.social-networks {
+				min-height: 450px;
 			}
 		}
 	}

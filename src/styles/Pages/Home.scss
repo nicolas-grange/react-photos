@@ -291,7 +291,7 @@
   ***/
   @media #{theme(media-queries, laptop)} {
   	section {
-  		padding-top: 140px;
+  		padding-top: 130px;
   		padding-bottom: 80px;
   	}
 
@@ -313,7 +313,7 @@
   ***/
   @media #{theme(media-queries, desktop)} {
   	section {
-  		padding-top: 140px;
+  		padding-top: 180px;
   		padding-bottom: 100px;
   	}
 
@@ -347,6 +347,96 @@
   	.contact-section {
   		&::before {
   			border-bottom: 180px solid transparent;
+  		}
+  	}
+  }
+
+  /***
+  *** desktop xl ***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+  	section {
+  		padding-top: 220px;
+  		padding-bottom: 120px;
+  	}
+
+  	.introduction-section {
+  		.infos {
+  			max-width: 800px;
+  			
+  			p {
+					font-size: 46px;
+				}
+
+				h2 {
+					font-size: 90px;
+					line-height: 100px;
+				}
+  		}
+
+  		.scroll-icon {
+				width: 80px;
+			}
+
+  		.social-networks {
+				max-height: 380px;
+	  	}
+  	}
+
+  	.portfolio-section {
+  		&::before {
+				border-bottom: 220px solid theme(color, grey-light);
+			}
+  	}
+
+  	.contact-section {
+  		&::before {
+  			border-bottom: 220px solid transparent;
+  		}
+  	}
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+  	section {
+  		padding-top: 250px;
+  		padding-bottom: 150px;
+  	}
+
+  	.introduction-section {
+  		.infos {
+  			max-width: 800px;
+  			
+  			p {
+					font-size: 52px;
+				}
+
+				h2 {
+					font-size: 100px;
+					line-height: 110px;
+				}
+  		}
+
+  		.scroll-icon {
+				width: 100px;
+			}
+
+  		.social-networks {
+				max-height: 450px;
+	  	}
+  	}
+
+  	.portfolio-section {
+  		&::before {
+				border-bottom: 250px solid theme(color, grey-light);
+			}
+  	}
+
+  	.contact-section {
+  		&::before {
+  			border-bottom: 250px solid transparent;
   		}
   	}
   }

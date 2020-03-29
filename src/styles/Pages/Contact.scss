@@ -96,4 +96,26 @@
 			}
 		}
 	}
+
+	/***
+	*** desktop xl ***
+	***/
+	@media #{theme(media-queries, desktop-xl)} {
+		section {
+			&.contact-info {
+				max-width: 1000px;
+			}
+		}
+	}
+
+	/***
+	*** desktop xxl ***
+	***/
+	@media #{theme(media-queries, desktop-xxl)} {
+		section {
+			&.contact-info {
+				max-width: 1100px;
+			}
+		}
+	}
 }
