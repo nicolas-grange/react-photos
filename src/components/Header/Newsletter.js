@@ -50,6 +50,7 @@ class Newsletter extends React.Component {
 
   render() {
     const newsletter = {
+      required: true,
       name: "email",
       label: "E-mail",
       item: {

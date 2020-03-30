@@ -71,6 +71,7 @@ class ContactForm extends React.Component {
   render() {
     const formItems = {
       name:  {
+        required: true,
         name: "name",
         label: "Name",
         item: {
@@ -80,6 +81,7 @@ class ContactForm extends React.Component {
         }
       },
       mail: {
+        required: true,
         name: "email",
         label: "E-mail",
         item: {
@@ -89,6 +91,7 @@ class ContactForm extends React.Component {
         }
       },
       subject: {
+        required: true,
         name: "subject",
         label: "Subject",
         item: {
@@ -98,6 +101,7 @@ class ContactForm extends React.Component {
         }
       },
       message: {
+        required: true,
         name: "message",
         label: "Tap your message",
         item: {

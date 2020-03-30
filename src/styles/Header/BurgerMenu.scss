@@ -10,23 +10,23 @@
 
 	  span {
 	  	background-color: theme(color, light);
-		height: 2px;
-		border-radius: 2px;
-		display: block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 20px;
-		transform: translate(-50%);
-		transform-origin: center;
-		content: '';
-		transition: transform 500ms, top 500ms, left 500ms, width 500ms, background-color 500ms;
+			height: 2px;
+			border-radius: 2px;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 20px;
+			transform: translate(-50%);
+			transform-origin: center;
+			content: '';
+			transition: transform 500ms, top 500ms, left 500ms, width 500ms, background-color 500ms;
 
-		@for $i from 1 through 3 {
-			&:nth-child(#{$i}) {
-			  top: 12px + $i*6px;
+			@for $i from 1 through 3 {
+				&:nth-child(#{$i}) {
+				  top: 12px + $i*6px;
+				}
 			}
-		}
 	  }
 	}
 
@@ -57,6 +57,69 @@
 	@media #{theme(media-queries, smartphone-xxl)} {
 		.burger-menu:hover span{
 			background-color: theme(color, primary);
+		}
+	}
+
+	/***
+	*** desktop ***
+	***/
+	@media #{theme(media-queries, desktop)} {
+		.burger-menu {
+	  	width: 55px;
+	  	height: 55px;
+
+		  span {
+				height: 2px;
+				width: 25px;
+
+				@for $i from 1 through 3 {
+					&:nth-child(#{$i}) {
+					  top: 14px + $i*7px;
+					}
+				}
+			}
+		}
+	}
+
+	/***
+	*** desktop xl ***
+	***/
+	@media #{theme(media-queries, desktop-xl)} {
+		.burger-menu {
+	  	width: 65px;
+	  	height: 65px;
+
+		  span {
+				height: 3px;
+				width: 30px;
+
+				@for $i from 1 through 3 {
+					&:nth-child(#{$i}) {
+					  top: 14px + $i*9px;
+					}
+				}
+			}
+		}
+	}
+
+	/***
+	*** desktop xxl ***
+	***/
+	@media #{theme(media-queries, desktop-xxl)} {
+		.burger-menu {
+	  	width: 80px;
+	  	height: 80px;
+
+		  span {
+				height: 3px;
+				width: 40px;
+
+				@for $i from 1 through 3 {
+					&:nth-child(#{$i}) {
+					  top: 18px + $i*11px;
+					}
+				}
+			}
 		}
 	}
 }

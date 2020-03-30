@@ -35,6 +35,7 @@ class FormElement extends React.Component {
   createInputField(field) {
     return(
       <input 
+        required={field.required ? true : false}
         name={field.name ? field.name : ''}
         value={field.item.value ? field.item.value : ''}
         type={field.item.type ? field.item.type : ''} 
@@ -48,6 +49,7 @@ class FormElement extends React.Component {
   createTextareaField(field) {
     return(
       <textarea 
+        required={field.required ? true : false}
         name={field.name ? field.name : ''}
         value={field.item.value ? field.item.value : ''}
         onChange={this.handleChange} 
