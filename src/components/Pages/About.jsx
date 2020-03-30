@@ -2,8 +2,8 @@ import React from 'react';
 import Logo from '../Logo/Logo';
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 import PhotoSection from '../PhotoSection/PhotoSection';
-import photoAbout from '../../assets/images/about/about.jpg';
-import photoAboutLandscape from '../../assets/images/about/aboutLandscape.jpg';
+import photoAbout from '../../assets/images/about/about.png';
+import photoAboutLandscape from '../../assets/images/about/aboutLandscape.png';
 
 const data = {
 	pretitleTitle: {

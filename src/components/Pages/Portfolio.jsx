@@ -24,35 +24,41 @@ const data = {
 			heightImg: 450,
 			photos: [
 				{
-			    src: require("../../assets/images/portfolio/portraits/1.jpg"),
+			    src: require("../../assets/images/portfolio/portraits/1.png"),
 			    width: 3,
 			    height: 2,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/portraits/2.jpg"),
+			    src: require("../../assets/images/portfolio/portraits/2.png"),
 			    width: 2,
 			    height: 3,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/portraits/3.jpg"),
+			    src: require("../../assets/images/portfolio/portraits/3.png"),
 			    width: 2,
 			    height: 3,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/portraits/4.jpg"),
+			    src: require("../../assets/images/portfolio/portraits/4.png"),
 			    width: 2,
 			    height: 3,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/portraits/5.jpg"),
+			    src: require("../../assets/images/portfolio/portraits/5.png"),
 			    width: 2,
 			    height: 3,
 			    alt: "Nicolas Photography"
-			  }
+			  },
+			  {
+			    src: require("../../assets/images/portfolio/portraits/6.png"),
+			    width: 3,
+			    height: 3,
+			    alt: "Nicolas Photography"
+			  },
 			]
 		},
 		{
@@ -61,39 +67,39 @@ const data = {
 			heightImg: 400,
 			photos: [
 				{
-			    src: require("../../assets/images/portfolio/animals/1.jpg"),
-			    width: 2,
-			    height: 3,
-			    alt: "Nicolas Photography"
-			  },
-			  {
-			    src: require("../../assets/images/portfolio/animals/2.jpg"),
-			    width: 4,
-			    height: 3,
-			    alt: "Nicolas Photography"
-			  },
-			  {
-			    src: require("../../assets/images/portfolio/animals/3.jpg"),
-			    width: 4,
-			    height: 3,
-			    alt: "Nicolas Photography"
-			  },
-			  {
-			    src: require("../../assets/images/portfolio/animals/4.jpg"),
+			    src: require("../../assets/images/portfolio/animals/1.png"),
 			    width: 3,
-			    height: 4,
+			    height: 2,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/animals/5.jpg"),
+			    src: require("../../assets/images/portfolio/animals/2.png"),
 			    width: 3,
-			    height: 4,
+			    height: 2,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/animals/6.jpg"),
-			    width: 4,
-			    height: 3,
+			    src: require("../../assets/images/portfolio/animals/3.png"),
+			    width: 3,
+			    height: 2,
+			    alt: "Nicolas Photography"
+			  },
+			  {
+			    src: require("../../assets/images/portfolio/animals/4.png"),
+			    width: 3,
+			    height: 2,
+			    alt: "Nicolas Photography"
+			  },
+			  {
+			    src: require("../../assets/images/portfolio/animals/5.png"),
+			    width: 3,
+			    height: 2,
+			    alt: "Nicolas Photography"
+			  },
+			  {
+			    src: require("../../assets/images/portfolio/animals/6.png"),
+			    width: 3,
+			    height: 2,
 			    alt: "Nicolas Photography"
 			  }
 			]
@@ -104,38 +110,38 @@ const data = {
 			heightImg: 400,
 			photos: [
 				{
-			    src: require("../../assets/images/portfolio/landscapes/1.jpg"),
+			    src: require("../../assets/images/portfolio/landscapes/1.png"),
 			    width: 3,
 			    height: 2,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/landscapes/2.jpg"),
+			    src: require("../../assets/images/portfolio/landscapes/2.png"),
 			    width: 3,
 			    height: 2,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/landscapes/3.jpg"),
+			    src: require("../../assets/images/portfolio/landscapes/3.png"),
+			    width: 4,
+			    height: 2,
+			    alt: "Nicolas Photography"
+			  },
+			  {
+			    src: require("../../assets/images/portfolio/landscapes/4.png"),
+			    width: 2,
+			    height: 3,
+			    alt: "Nicolas Photography"
+			  },
+			  {
+			    src: require("../../assets/images/portfolio/landscapes/5.png"),
 			    width: 3,
 			    height: 2,
 			    alt: "Nicolas Photography"
 			  },
 			  {
-			    src: require("../../assets/images/portfolio/landscapes/4.jpg"),
-			    width: 3,
-			    height: 2,
-			    alt: "Nicolas Photography"
-			  },
-			  {
-			    src: require("../../assets/images/portfolio/landscapes/5.jpg"),
-			    width: 3,
-			    height: 2,
-			    alt: "Nicolas Photography"
-			  },
-			  {
-			    src: require("../../assets/images/portfolio/landscapes/6.jpg"),
-			    width: 3,
+			    src: require("../../assets/images/portfolio/landscapes/6.png"),
+			    width: 2,
 			    height: 2,
 			    alt: "Nicolas Photography"
 			  }

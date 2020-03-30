@@ -16,7 +16,7 @@ const data = {
     },
     imageTextLink: {
       img: {
-        src: require("../../assets/images/about/about.jpg"),
+        src: require("../../assets/images/home/portrait.png"),
         alt: "Nicolas Photography"
       },
       textLink: {
@@ -37,7 +37,7 @@ const data = {
     slider: [
       {
         img: {
-          src: require("../../assets/images/portfolio/landscapes/1.jpg"),
+          src: require("../../assets/images/portfolio/landscapes/3.png"),
           alt: "Nicolas Photography"
         },
         textLink: {
@@ -51,7 +51,7 @@ const data = {
       },
       {
         img: {
-          src: require("../../assets/images/portfolio/portraits/1.jpg"),
+          src: require("../../assets/images/portfolio/portraits/1.png"),
           alt: "Nicolas Photography"
         },
         textLink: {
@@ -65,7 +65,7 @@ const data = {
       },
       {
         img: {
-          src: require("../../assets/images/portfolio/landscapes/2.jpg"),
+          src: require("../../assets/images/portfolio/landscapes/1.png"),
           alt: "Nicolas Photography"
         },
         textLink: {
@@ -79,7 +79,7 @@ const data = {
       },
       {
         img: {
-          src: require("../../assets/images/portfolio/animals/2.jpg"),
+          src: require("../../assets/images/portfolio/animals/1.png"),
           alt: "Nicolas Photography"
         },
         textLink: {

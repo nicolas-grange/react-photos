@@ -21,7 +21,7 @@
 		flex-direction: column;
 		height: 100vh;
 		justify-content: space-between;
-		background: url("../../assets/images/home/intro-mobile.jpg") center no-repeat;
+		background: url("../../assets/images/home/intro-mobile.png") center no-repeat;
 		background-size: cover;
 
 		.infos {
@@ -154,7 +154,7 @@
   ***/
   @media #{theme(media-queries, smartphone-xxl)} {
     .introduction-section {
-			background: url("../../assets/images/home/intro-mobile-plus.jpg") center no-repeat;
+			background: url("../../assets/images/home/intro-mobile-plus.png") center no-repeat;
 			background-size: cover;
 
 			.infos {
@@ -215,7 +215,7 @@
 	  		position: absolute;
 	  		max-width: 60px;
 				text-align: center;
-				left: 50px;
+				left: 25px;
 				max-height: 280px;
 				bottom: 0;
 	  	}
@@ -252,7 +252,7 @@
 		}
   
   	.introduction-section {
-  		background: url("../../assets/images/home/intro-tablet.jpg") center no-repeat;
+  		background: url("../../assets/images/home/intro-tablet.png") center no-repeat;
 			background-size: cover;
 
   		.infos {

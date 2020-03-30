@@ -9,6 +9,8 @@
 		position: relative;
 		width: 100%;
 		min-height: 400px;
+		max-width: 630px;
+		margin: auto;
 
 		img {
 			position: absolute;
@@ -27,6 +29,12 @@
 		figure {
 			height: 100vh;
 			min-height: inherit;
+			max-width: inherit;
+
+			img {
+				max-height: 90vh;
+				top: 10vh;
+			}
 		}
 	}
 }
