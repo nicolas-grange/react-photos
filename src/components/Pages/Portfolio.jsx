@@ -234,7 +234,7 @@ class Portfolio extends React.Component {
     		<Logo color="dark"/>
 	    	<section className="portfolio-container">
 	    		<PretitleTitle className="wrapper-intern" data={data.pretitleTitle}/>
-	    		<Router>
+	    		<Router basename={process.env.PUBLIC_URL}>
 	    			<nav className="portfolio-nav">
 	    				<NavLinks links={links} />
 	    			</nav>

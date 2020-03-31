@@ -15,14 +15,14 @@ class Privacy extends React.Component {
 	    	<section className="privacy-container">
 		    	<div className="wrapper-intern">
 		    		<PretitleTitle data={{pretitle: 'Nicolas Photography', title: 'Privacy'}}/>
-		    		<h3>Privacy Policy of https://www.nicolasphotography.com</h3>
-		    		<p>At Daguet Photography, we collect and manage user data according to the following Privacy Policy.</p>
+		    		<h3>Privacy Policy of https://nicolas-grange.github.io/react-photos/</h3>
+		    		<p>At Nicolas Photography, we collect and manage user data according to the following Privacy Policy.</p>
 		    		<h3>Data Collected</h3>
 		    		<p>We collect information you provide directly to us. For example, we collect information when you create an account, subscribe, participate in any interactive features of our services, fill out a form, request customer support or otherwise communicate with us. The types of information we may collect include your name, email address, postal address, credit card information and other contact or identifying information you choose to provide.</p>
 		    		<p>We collect anonymous data from every visitor of the Website to monitor traffic and fix bugs. For example, we collect information like web requests, the data sent in response to such requests, the Internet Protocol address, the browser type, the browser language, and a timestamp for the request.</p>
 		    		<p>We also use various technologies to collect information, and this may include sending cookies to your computer. Cookies are small data files stored on your hard drive or in your device memory that helps us to improve our services and your experience, see which areas and features of our services are popular and count visits. We may also collect information using web beacons (also known as "tracking pixels"). Web beacons are electronic images that may be used in our services or emails and to track count visits or understand usage and campaign effectiveness.</p>
 		    		<h3>Use of the Data</h3>
-		    		<p>We only use your personal information to provide you the Daguet Photography services or to communicate with you about the Website or the services. Our Privacy Policy was created with the help of the Privacy Policy Template and the Terms and Conditions Template.</p>
+		    		<p>We only use your personal information to provide you the Nicolas Photography services or to communicate with you about the Website or the services. Our Privacy Policy was created with the help of the Privacy Policy Template and the Terms and Conditions Template.</p>
 		    		<p>We employ industry standard techniques to protect against unauthorized access of data about you that we store, including personal information.</p>
 		    		<p>We do not share personal information you have provided to us without your consent, unless:</p>
 		    		<ul>

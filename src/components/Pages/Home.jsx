@@ -130,7 +130,7 @@ class Home extends React.Component {
             <div className="infos">
               <p>Photograph</p>
               <h2>Nicolas Grange</h2>
-              <Button handleClick={this.handleClickDiscover} data={{label: 'Discover', path: '#about-section'}}/>
+              <Button handleClick={this.handleClickDiscover} data={{label: 'Discover', anchor: true, path: '#about-section'}}/>
             </div>
             <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
           </Fade>

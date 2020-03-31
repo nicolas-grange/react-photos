@@ -87,7 +87,7 @@ class App extends React.Component {
   	const routesComponents = this.getRoutesComponents();
     
 		return (
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 		    <div className="App">
 		      <Header routes={routes}/>
 		      <main>
