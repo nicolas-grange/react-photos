@@ -1,6 +1,6 @@
 import React from 'react';
+import { isMobile } from '../../scripts/utils.js';
 import Fade from 'react-reveal/Fade';
-
 import Logo from '../Logo/Logo';
 import Button from '../Button/Button';
 import SocialNetworks from '../SocialNetworks/SocialNetworks';
@@ -105,10 +105,25 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.handleClickDiscover = this.handleClickDiscover.bind(this);
+    this.updateHeight = this.updateHeight.bind(this);
+    this.state = {
+      height: 0
+    };
   }
 
   componentDidMount() {
     window.top.window.scrollTo(0,0);
+    this.updateHeight();
+    if(!isMobile()) {
+      window.addEventListener('resize', this.updateHeight);
+    }  
+  }
+
+  updateHeight() {
+    const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    this.setState({
+      height: height
+    });
   }
 
   handleClickDiscover(e) {
@@ -120,9 +135,10 @@ class Home extends React.Component {
 
   render() {
     const scrollGif = require("../../assets/gif/scroll.gif");
+  
     return (
     	<div className="home-container">
-	    	<section className="introduction-section">
+	    	<section style={{height: this.state.height + 'px'}} className="introduction-section">
           <Fade top>
 	    		 <Logo color="white"/>
           </Fade>
@@ -132,8 +148,8 @@ class Home extends React.Component {
               <h2>Nicolas Grange</h2>
               <Button handleClick={this.handleClickDiscover} data={{label: 'Discover', anchor: true, path: '#about-section'}}/>
             </div>
-            <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
           </Fade>
+            <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
           <SocialNetworks/>
 	    	</section>
 	    	<section id ="about-section" className="about-section">

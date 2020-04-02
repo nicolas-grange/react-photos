@@ -4,17 +4,15 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-
+import './scripts/polyfills.js';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Portfolio from './components/Pages/Portfolio';
 import Contact from './components/Pages/Contact';
 import Privacy from './components/Pages/Privacy';
 import NotFound from './components/Pages/NotFound';
-
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-
 import './styles/App.scss';
 
 const routes = [

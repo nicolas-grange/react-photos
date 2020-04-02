@@ -3,7 +3,6 @@ import Logo from '../Logo/Logo';
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 import PhotoSection from '../PhotoSection/PhotoSection';
 import photoAbout from '../../assets/images/about/about.png';
-import photoAboutLandscape from '../../assets/images/about/aboutLandscape.png';
 
 const data = {
 	pretitleTitle: {
@@ -13,33 +12,9 @@ const data = {
 }
 
 class About extends React.Component {
-	constructor(props) {
-		super(props);
-		this.updateLandscapeView = this.updateLandscapeView.bind(this);
-		this.state = {
-			landscapeView: false
-		};
-	}
 
 	componentDidMount() {
 		window.top.window.scrollTo(0,0);
-		window.addEventListener("resize", this.updateLandscapeView);
-		this.updateLandscapeView();
-	}
-
-	componentWillUnmount() {
-    window.removeEventListener("resize", this.updateLandscapeView);
-  }
-
-	updateLandscapeView() {
-		let landscapeView = false;
-		if(window.matchMedia("only screen and (min-width : 768px)").matches) {
-			landscapeView = true;
-		}
-
-		this.setState({
-			landscapeView: landscapeView
-		});
 	}
 
   render() {
@@ -47,7 +22,7 @@ class About extends React.Component {
     	<div className="about-container">
     		<section className="photo-section-container">
     			<Logo color="white" bg="dark"/>
-    			<PhotoSection photo={this.state.landscapeView ? photoAboutLandscape : photoAbout}/>
+    			<PhotoSection photo={photoAbout}/>
 	    	</section>
 	    	<section className="info-section-container">
 	    		<div className="wrapper-intern">

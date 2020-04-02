@@ -1,10 +1,8 @@
 import React from 'react';
-import Logo from '../Logo/Logo';
 import {
   withRouter
 } from 'react-router-dom';
-
-
+import Logo from '../Logo/Logo';
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 import Button from '../Button/Button';
 

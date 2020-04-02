@@ -1,8 +1,6 @@
 import React from 'react';
-
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from 'react-images';
-
 
 class GalleryPhotos extends React.Component {
   constructor(props) {

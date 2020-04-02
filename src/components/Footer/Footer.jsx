@@ -1,10 +1,9 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import {
   withRouter,
   Link
 } from 'react-router-dom';
-
+import Fade from 'react-reveal/Fade';
 import SocialNetworks from '../SocialNetworks/SocialNetworks';
 
 class Footer extends React.Component {

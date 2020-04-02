@@ -148,6 +148,15 @@
 			}
 		}	
 	}
+	
+	/***
+  *** smartphone ***
+  ***/
+  @media #{theme(media-queries, smartphone)} {
+		.introduction-section {
+			height: calc(100vh - 56px);
+		}
+  }
 
 	/***
   *** smartphone xxl ***

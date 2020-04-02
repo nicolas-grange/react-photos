@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ImageTextLink from '../ImageTextLink/ImageTextLink';
 
 class Slide extends React.Component {

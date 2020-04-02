@@ -2,7 +2,6 @@ import React from 'react';
 import {
   withRouter
 } from 'react-router-dom';
-
 import Logo from '../Logo/Logo';
 import NavLinks from '../NavLinks/NavLinks';
 import Newsletter from './Newsletter';

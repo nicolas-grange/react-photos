@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { isMailValid } from '../../scripts/utils.js';
 import FormElement from '../FormElement/FormElement';
 import {ArrowRightIcon} from '../Icons';
 
@@ -42,7 +42,7 @@ class Newsletter extends React.Component {
 
   verifyForm() {
     const mail = this.state.email;
-    if (!mail.match(/[a-z0-9_\-.]+@[a-z0-9_\-.]+\.[a-z]+/i)) {
+    if(!isMailValid(mail)) {
       return [false, 'Error: email format does not match!'];
     }
     return [true, 'Success: subscription for ' + mail + '!'];

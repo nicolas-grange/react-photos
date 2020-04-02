@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../Logo/Logo';
+import { shuffleArray } from '../../scripts/utils.js';
 import {
   BrowserRouter as Router,
   withRouter,
@@ -7,7 +7,7 @@ import {
   Redirect,
   Route
 } from "react-router-dom";
-
+import Logo from '../Logo/Logo';
 import PretitleTitle from '../PretitleTitle/PretitleTitle';
 import NavLinks from '../NavLinks/NavLinks';
 import GalleryPhotos from '../GalleryPhotos/GalleryPhotos';
@@ -74,8 +74,8 @@ const data = {
 			  },
 			  {
 			    src: require("../../assets/images/portfolio/animals/2.png"),
-			    width: 3,
-			    height: 2,
+			    width: 4,
+			    height: 3,
 			    alt: "Nicolas Photography"
 			  },
 			  {
@@ -160,21 +160,13 @@ class Portfolio extends React.Component {
 		window.top.window.scrollTo(0,0);
 	}
 
-	shufflePhotos(photos) {
-		for (let i = photos.length - 1; i > 0; i--) {
-	    let j = Math.floor(Math.random() * (i + 1));
-	    [photos[i], photos[j]] = [photos[j], photos[i]];
-	  }
-	  return photos;
-	}
-
 	getPhotosByCategory(category) {
 		if(category === 'all') {
 			let allPhotos = [];
 			data.photos.forEach((element) => {
 				allPhotos = allPhotos.concat(element.photos);
 			});
-			allPhotos = this.shufflePhotos(allPhotos);
+			allPhotos = shuffleArray(allPhotos);
 			return {photos: allPhotos};
 		} else {
 			return data.photos.filter((element) => element.category.toLowerCase() === category)[0];

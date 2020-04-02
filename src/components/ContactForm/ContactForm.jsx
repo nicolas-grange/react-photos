@@ -1,7 +1,7 @@
 import React from 'react';
+import { isMailValid } from '../../scripts/utils.js';
 import OpenCloseForm from './OpenCloseForm';
 import FormElement from '../FormElement/FormElement';
-
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class ContactForm extends React.Component {
     if(name.length < 3) {
       return [false, 'Error: name must have more than 2 characters!'];
     }
-    if (!mail.match(/[a-z0-9_\-.]+@[a-z0-9_\-.]+\.[a-z]+/i)) {
+    if(!isMailValid(mail)) {
       return [false, 'Error: email format does not match!'];
     }
     if(subject.length < 3) {

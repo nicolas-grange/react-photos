@@ -97,8 +97,7 @@
 	*** tablet landscape ***
 	***/
 	@media #{theme(media-queries, tablet-landscape)} {
-		max-width: inherit;
-		padding-left: 100px;
+		margin-right: 100px;
 		padding-top: 0;
 		padding-bottom: 15px;
 		height: 100%;
@@ -135,7 +134,7 @@
 	*** desktop ***
 	***/
 	@media #{theme(media-queries, desktop)} {
-		padding-left: 200px;
+		margin-right: 200px;
 		max-height: 400px;
 
 		li {

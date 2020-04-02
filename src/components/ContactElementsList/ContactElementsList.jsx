@@ -1,7 +1,6 @@
 import React from 'react';
 import {PhoneIcon, EmailIcon, AddressIcon} from '../Icons';
 
-
 function ContactElementsItem(props) {
 
   const data = props.data;

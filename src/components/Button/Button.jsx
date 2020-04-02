@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Link
 } from 'react-router-dom';
-
 import {ArrowRightIcon} from '../Icons';
 
 class Button extends React.Component {

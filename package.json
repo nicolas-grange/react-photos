@@ -11,6 +11,7 @@
     "core-js": "^3.6.4",
     "google-maps-react": "^2.0.2",
     "node-sass": "^4.13.1",
+    "objectFitPolyfill": "^2.3.0",
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
