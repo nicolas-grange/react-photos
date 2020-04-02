@@ -1,5 +1,6 @@
 export { default as AddressIcon } from './AddressIcon'
 export { default as ArrowRightIcon } from './ArrowRightIcon'
+export { default as ChevronIcon } from './ChevronIcon'
 export { default as EmailIcon } from './EmailIcon'
 export { default as FacebookIcon } from './FacebookIcon'
 export { default as InstagramIcon } from './InstagramIcon'

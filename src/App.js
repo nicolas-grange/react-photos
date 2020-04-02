@@ -11,6 +11,7 @@ import Portfolio from './components/Pages/Portfolio';
 import Contact from './components/Pages/Contact';
 import Privacy from './components/Pages/Privacy';
 import NotFound from './components/Pages/NotFound';
+import ScrollUp from './components/ScrollUp/ScrollUp';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './styles/App.scss';
@@ -90,6 +91,7 @@ class App extends React.Component {
 		      <Header routes={routes}/>
 		      <main>
 		      	{routesComponents}
+            <ScrollUp />
 		      </main>
           <Footer />
 		    </div>

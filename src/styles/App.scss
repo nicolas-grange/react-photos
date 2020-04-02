@@ -1,38 +1,29 @@
 @import '_config/normalize';
 @import '_config/variables';
 @import '_config/general';
-
 @import 'Logo/Logo';
-
 @import 'Header/Header';
 @import 'Header/BurgerMenu';
 @import 'Header/Overlay';
 @import 'Header/Navigation';
 @import 'Header/Newsletter';
-
 @import 'FormElement/FormElement';
 @import 'SocialNetworks/SocialNetworks';
 @import 'PretitleTitle/PretitleTitle';
-
 @import 'Pages/Home';
 @import 'Button/Button';
 @import 'ImageTextLink/ImageTextLink';
 @import 'Slider/Slider';
 @import 'Slider/Slide';
-
-
 @import 'Pages/About';
 @import 'PhotoSection/PhotoSection';
-
 @import 'Pages/Portfolio';
 @import 'GalleryPhotos/GalleryPhotos';
-
 @import 'Pages/Contact';
 @import 'ContactElementsList/ContactElementsList';
 @import 'GoogleMap/GoogleMap';
 @import 'ContactForm/ContactForm';
 @import 'ContactForm/OpenCloseForm';
-
 @import 'Pages/Privacy';
-
 @import 'Footer/Footer';
+@import 'ScrollUp/ScrollUp';
