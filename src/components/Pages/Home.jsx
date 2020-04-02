@@ -149,8 +149,8 @@ class Home extends React.Component {
               <Button handleClick={this.handleClickDiscover} data={{label: 'Discover', anchor: true, path: '#about-section'}}/>
             </div>
           </Fade>
-            <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
           <SocialNetworks/>
+          <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
 	    	</section>
 	    	<section id ="about-section" className="about-section">
           <div className="wrapper-intern">
