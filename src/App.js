@@ -4,7 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import './scripts/polyfills.js';
+import { updateAppVhUnit } from './scripts/utils.js';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Portfolio from './components/Pages/Portfolio';
@@ -61,6 +61,16 @@ class App extends React.Component {
       colorLogo: 'dark',
       bgLogo: ''
     }
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', updateAppVhUnit);
+    window.addEventListener('orientationchange', updateAppVhUnit);
+    updateAppVhUnit(); 
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", updateAppVhUnit);
   }
 
 	// get the routes components list

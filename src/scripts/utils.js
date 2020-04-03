@@ -20,8 +20,15 @@ function shuffleArray(arrayToShuffle) {
   return arrayToShuffle;
 }
 
+// resizing vh for mobile topbar
+function updateAppVhUnit() {
+	let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
 export {
 	isMobile,
 	isMailValid,
-	shuffleArray
+	shuffleArray,
+	updateAppVhUnit
 };
