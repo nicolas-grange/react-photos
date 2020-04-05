@@ -7,7 +7,7 @@ import ContactForm from '../ContactForm/ContactForm';
 
 const data = {
 	pretitleTitle: {
-		pretitle: "Fell free to",
+		pretitle: "Feel free to",
 		title: "Contact"
 	},
 	contactElementsList: {
