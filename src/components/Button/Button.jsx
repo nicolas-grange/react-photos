@@ -10,16 +10,18 @@ class Button extends React.Component {
     const handleClick = this.props.handleClick;
 
     if(data.anchor) {
-    	return (
-	    	<a onClick={handleClick} className='button' href={data.path}>{data.label}<ArrowRightIcon/></a>
-	    );
+      return (
+        <a onClick={handleClick} className='button' href={data.path}>
+          {data.label}
+          <ArrowRightIcon/>
+        </a>
+      );
     } else {
-    	return (
-	    	<Link className='button' to={data.path}>{data.label}<ArrowRightIcon/></Link>
-	    );
+      return (
+        <Link className='button' to={data.path}>{data.label}<ArrowRightIcon/></Link>
+      );
     }
   }
 }
 
 export default Button;
-
