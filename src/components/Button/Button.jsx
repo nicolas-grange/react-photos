@@ -15,7 +15,7 @@ class Button extends React.Component {
 	    );
     } else {
     	return (
-	    	<Link onClick={handleClick} className='button' to={data.path}>{data.label}<ArrowRightIcon/></Link>
+	    	<Link className='button' to={data.path}>{data.label}<ArrowRightIcon/></Link>
 	    );
     }
   }
