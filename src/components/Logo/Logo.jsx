@@ -8,7 +8,7 @@ import logoDark from '../../assets/images/logo-dark.png';
 class Logo extends React.Component {
 
   render() {
-  	const bg = this.props.bg;
+    const bg = this.props.bg;
     return(
       <h1 className={"logo " + (bg === 'dark' ? 'bg-dark' : '')}>
         <Link to="/">

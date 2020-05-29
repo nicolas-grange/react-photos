@@ -9,7 +9,7 @@ import ImageTextLink from '../ImageTextLink/ImageTextLink';
 import Slider from '../Slider/Slider';
 
 const data = {
-	about: {
+  about: {
     pretitleTitle: {
       pretitle: "More",
       title: "About Me"
@@ -135,12 +135,12 @@ class Home extends React.Component {
 
   render() {
     const scrollGif = require("../../assets/gif/scroll.gif");
-  
+
     return (
-    	<div className="home-container">
-	    	<section style={{height: this.state.height + 'px'}} className="introduction-section">
+      <div className="home-container">
+        <section style={{height: this.state.height + 'px'}} className="introduction-section">
           <Fade top>
-	    		 <Logo color="white"/>
+            <Logo color="white"/>
           </Fade>
           <Fade bottom>
             <div className="infos">
@@ -151,8 +151,8 @@ class Home extends React.Component {
           </Fade>
           <SocialNetworks/>
           <img className="scroll-icon" src={scrollGif} alt="scroll icon"/>
-	    	</section>
-	    	<section id ="about-section" className="about-section">
+        </section>
+        <section id ="about-section" className="about-section">
           <div className="wrapper-intern">
             <PretitleTitle data={data.about.pretitleTitle}/>
             <Fade bottom>
@@ -160,13 +160,13 @@ class Home extends React.Component {
             </Fade>
           </div>
         </section>
-	    	<section className="portfolio-section">
+        <section className="portfolio-section">
           <div className="wrapper-intern">
             <PretitleTitle data={data.portfolio.pretitleTitle}/> 
             <Slider data={data.portfolio.slider} />
           </div>
         </section>
-	    	<section className="contact-section">
+        <section className="contact-section">
           <div className="wrapper-intern">
             <PretitleTitle data={data.contact.pretitleTitle}/> 
             <Fade bottom>
@@ -183,7 +183,7 @@ class Home extends React.Component {
             </Fade>
           </div>
         </section>
-    	</div>
+      </div>
     );
   }
 }

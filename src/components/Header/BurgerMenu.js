@@ -2,9 +2,9 @@ import React from 'react';
 
 class BurgerMenu extends React.Component {
 
-	handleClick(e) {
-		e.preventDefault();
-	}
+  handleClick(e) {
+    e.preventDefault();
+  }
 
   render() {
     return (

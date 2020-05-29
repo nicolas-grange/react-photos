@@ -5,23 +5,23 @@ import {
 
 class NavLinks extends React.Component {
 
-	listItems(links) {
-		return(
-			links.map((link) =>
+  listItems(links) {
+    return(
+      links.map((link) =>
         <li key={link.id}>
           <NavLink exact={link.path === "/" ? true : false} activeClassName="selected" to={link.path}>{link.label}</NavLink>
         </li>
-		  )
-		);
-	}
-  render() {
+      )
+    );
+  }
 
-  	const listItems = this.listItems(this.props.links);
+  render() {
+    const listItems = this.listItems(this.props.links);
 
     return (
-  		<ul>
-  			{listItems}
-  		</ul>
+      <ul>
+        {listItems}
+      </ul>
     );
   }
 }

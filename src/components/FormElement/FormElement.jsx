@@ -80,13 +80,13 @@ class FormElement extends React.Component {
         }
       } 
     }
-
+    
     return(
       <div className={"form-element " + ((field.item.kind && field.item.kind === "textarea") ? 'textarea' : '')}>
-          <label className={(focus || !empty) ? "focus " : ""}>
-            {field.label ? field.label : ''}
-          </label>
-          {fieldItem}
+        <label className={(focus || !empty) ? "focus " : ""}>
+          {field.label ? field.label : ''}
+        </label>
+        {fieldItem}
       </div>
     );
   }

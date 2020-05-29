@@ -36,7 +36,7 @@ class Newsletter extends React.Component {
 
     // if we have to send the mail
     if(this.state.sucess) {
-      // send mail
+    // send mail
     }
   }
 
@@ -63,7 +63,7 @@ class Newsletter extends React.Component {
     const formMessage = (this.state.submitted ? (<p className={'message ' + (this.state.success ? 'success' : 'error')}>{this.state.formMessage}</p>) : null);
 
     return (
-    	<div className="newsletter">
+      <div className="newsletter">
         <div className="content">
           <p>Get in touch and subscribe to the newsletter!</p>
           <form onSubmit={this.handleSubmit}>
@@ -74,7 +74,7 @@ class Newsletter extends React.Component {
           </form>
           {formMessage}
         </div>
-    	</div>
+      </div>
     );
   }
 }

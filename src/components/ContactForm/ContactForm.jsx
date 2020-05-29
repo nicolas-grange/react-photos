@@ -23,7 +23,7 @@ class ContactForm extends React.Component {
 
   handleOpenClose() {
     this.setState((prevState, props) => ({
-      visible: prevState.visible === true ? false : true
+      visible: !prevState.visible
     }));
   }
 
@@ -43,7 +43,7 @@ class ContactForm extends React.Component {
 
     // if we have to send the mail
     if(this.state.sucess) {
-      // send mail
+    // send mail
     }
   }
 
@@ -64,7 +64,6 @@ class ContactForm extends React.Component {
     if(message.length < 6) {
       return [false, 'Error: message must have more than 5 characters!'];
     }
-    
     return [true, 'Success, message sent!'];
   }
 
@@ -115,7 +114,7 @@ class ContactForm extends React.Component {
     const formMessage = (this.state.submitted ? (<p className={'message ' + (this.state.success ? 'success' : 'error')}>{this.state.formMessage}</p>) : null);
 
     return (
-    	<div className={"contact-form wrapper-intern " + (visible === true ? 'visible' : 'invisible')}>
+      <div className={"contact-form wrapper-intern " + (visible === true ? 'visible' : 'invisible')}>
         <form onSubmit={this.handleSubmit}>
           <FormElement updateValue={this.handleChange} data={formItems.name}/>
           <FormElement updateValue={this.handleChange} data={formItems.mail}/>
@@ -133,5 +132,3 @@ class ContactForm extends React.Component {
 }
 
 export default ContactForm;
-
-
