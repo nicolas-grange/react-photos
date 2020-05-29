@@ -72,6 +72,9 @@
 						svg {
 							width: 20px;
 							pointer-events: none;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
 
 							path {
 								fill: theme(color, light);
