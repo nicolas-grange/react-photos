@@ -18,29 +18,29 @@ import './styles/App.scss';
 
 const routes = [
   {
-  	id: 1,
-  	visible: true,
+    id: 1,
+    visible: true,
     path: '/',
     label: 'Home',
     component: Home
   },
   {
-  	id: 2,
-  	visible: true,
+    id: 2,
+    visible: true,
     path: '/about',
     label: 'About me',
     component: About
   },
   {
-  	id: 3,
-  	visible: true,
+    id: 3,
+    visible: true,
     path: '/portfolio',
     label: 'Portfolio',
     component: Portfolio
   },
   {
-  	id: 4,
-  	visible: true,
+    id: 4,
+    visible: true,
     path: '/contact',
     label: 'Contact',
     component: Contact
@@ -73,40 +73,40 @@ class App extends React.Component {
     window.removeEventListener("resize", updateAppVhUnit);
   }
 
-	// get the routes components list
-	getRoutesComponents() {
-		const routesList = routes.map((route) => (
+  // get the routes components list
+  getRoutesComponents() {
+    const routesList = routes.map((route) => (
       <Route
         key={route.id} 
         exact={route.path === "/" ? true : false}
         path={route.path} 
         component={route.component} 
       />
-	  ));
+    ));
 
-		return (
+    return (
       <Switch>
         {routesList}
         <Route component={NotFound} />
       </Switch>
     );
-	}
+  }
 
   render() {
-  	const routesComponents = this.getRoutesComponents();
-    
-		return (
-			<Router basename={process.env.PUBLIC_URL}>
-		    <div className="App">
-		      <Header routes={routes}/>
-		      <main>
-		      	{routesComponents}
+    const routesComponents = this.getRoutesComponents();
+
+    return (
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="App">
+          <Header routes={routes}/>
+          <main>
+            {routesComponents}
             <ScrollUp />
-		      </main>
+          </main>
           <Footer />
-		    </div>
-		  </Router>
-  	);
+        </div>
+      </Router>
+    );
   }
 }
 
