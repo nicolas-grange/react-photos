@@ -4,7 +4,7 @@
   z-index: 2;
 
   &.bg-dark {
-  	background-color: theme(color, dark);
+    background-color: theme(color, dark);
   }
 
   a {
@@ -15,41 +15,41 @@
     }
   }
 
-	/***
-	*** tablet portrait ***
-	***/
-	@media #{theme(media-queries, tablet-portrait)} {
-		position: absolute;
+  /***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+    position: absolute;
 
-		a img {
-			width: 125px;
-		}
-	}
+    a img {
+      width: 125px;
+    }
+  }
 
-	/***
-	*** desktop ***
-	***/
-	@media #{theme(media-queries, desktop)} {
-		a img {
-			width: 150px;
-		}
-	}
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+    a img {
+      width: 150px;
+    }
+  }
 
-	/***
-	*** desktop xl***
-	***/
-	@media #{theme(media-queries, desktop-xl)} {
-		a img {
-			width: 180px;
-		}
-	}
+  /***
+  *** desktop xl***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+    a img {
+      width: 180px;
+    }
+  }
 
-	/***
-	*** desktop xxl***
-	***/
-	@media #{theme(media-queries, desktop-xxl)} {
-		a img {
-			width: 200px;
-		}
-	}
+  /***
+  *** desktop xxl***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+    a img {
+      width: 200px;
+    }
+  }
 }

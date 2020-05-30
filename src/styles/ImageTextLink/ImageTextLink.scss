@@ -1,57 +1,57 @@
 .image-text-link-container {
-	figure {
-		margin: 0;
-		position: relative;
+  figure {
+    margin: 0;
+    position: relative;
 
-		img {
-			width: 100%;
-		}
-	}
+    img {
+      width: 100%;
+    }
+  }
 
-	.text-container {
-		.button {
-			margin-top: 20px;
-		}
-	}
+  .text-container {
+    .button {
+      margin-top: 20px;
+    }
+  }
 
-	/***
+  /***
   *** tablet portrait ***
   ***/
   @media #{theme(media-queries, tablet-portrait)} {
-  	display: flex;
+    display: flex;
     flex-direction: row-reverse;
 
-  	figure {
-  		width: calc(50% - 25px);
-  		margin-left: 50px;
-  		min-height: 350px;
+    figure {
+      width: calc(50% - 25px);
+      margin-left: 50px;
+      min-height: 350px;
 
-  		img {
-  			position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         font-family: 'object-fit: cover;';
-  		}
-  	}
+      }
+    }
 
-  	.text-container {
-  		display: flex;
-  		flex-direction: column;
-    	justify-content: space-between;
-  		width: calc(50% - 25px);
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: calc(50% - 25px);
 
-  		h3 {
-  			margin-top: 0;
-  		}
+      h3 {
+        margin-top: 0;
+      }
 
-  		.button {
-  			width: fit-content;
+      .button {
+        width: fit-content;
         max-width: 9.5em;
         display: table;
-  		}
-  	}
+      }
+    }
   }
 }

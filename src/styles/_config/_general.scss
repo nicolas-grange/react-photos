@@ -1,95 +1,94 @@
 * {
-	box-sizing: border-box;
-	font-family: 'Lato', sans-serif;
-	color: theme(color, text, dark);
-	outline: none;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: theme(color, text, dark);
+  outline: none;
 }
 
 p, h3, h4, h5, h6, ul, ol {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 
 h3 {
-	font-weight: 700;
-	font-size: 20px;
-	opacity: 0.9;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 0.9;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-ul,
-ol {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper-intern {
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 500px; 
-	margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 500px; 
+  margin: auto;
 }
 
 .container-extern {
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /***
 *** smartphone xxl ***
 ***/
 @media #{theme(media-queries, smartphone-xxl)} {
-	h3 {
-		font-size: 22px;
-	}
+  h3 {
+    font-size: 22px;
+  }
 }
 
 /***
 *** tablet portrait ***
 ***/
 @media #{theme(media-queries, tablet-portrait)} {
-	.wrapper-intern {
-		max-width: 1000px; 
-	}
+  .wrapper-intern {
+    max-width: 1000px; 
+  }
 }
 
 /***
 *** desktop ***
 ***/
 @media #{theme(media-queries, desktop)} {
-	.wrapper-intern {
-		max-width: 1100px; 
-	}
+  .wrapper-intern {
+    max-width: 1100px; 
+  }
 
-	p, h4, h5, address, a, li, input {
-		font-size: 1.1em;
-	}
+  p, h4, h5, address, a, li, input {
+    font-size: 1.1em;
+  }
 
-	h3 {
-		font-size: 26px;
-	}
+  h3 {
+    font-size: 26px;
+  }
 }
 
 /***
 *** desktop xl ***
 ***/
 @media #{theme(media-queries, desktop-xl)} {
-	.wrapper-intern {
-		max-width: 1200px; 
-	}
+  .wrapper-intern {
+    max-width: 1200px; 
+  }
 
-	p, h4, h5, address, a, li, input {
-		font-size: 1.3em;
-	}
+  p, h4, h5, address, a, li, input {
+    font-size: 1.3em;
+  }
 
-	h3 {
-		font-size: 30px;
-	}
+  h3 {
+    font-size: 30px;
+  }
 }
 
 /***
@@ -97,15 +96,15 @@ ol {
 ***/
 @media #{theme(media-queries, desktop-xxl)} {
 
-	.wrapper-intern {
-		max-width: 1400px; 
-	}
+  .wrapper-intern {
+    max-width: 1400px; 
+  }
 
-	p, h4, h5, address, a, li, input {
-		font-size: 1.6em;
-	}
+  p, h4, h5, address, a, li, input {
+    font-size: 1.6em;
+  }
 
-	h3 {
-		font-size: 36px;
-	}
+  h3 {
+    font-size: 36px;
+  }
 }

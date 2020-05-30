@@ -1,38 +1,38 @@
 $theme: (
   color: (
-  	dark: #000,
-  	light: #FFF,
-  	grey: #AAA,
-  	grey-light: #F0F0F0,
+    dark: #000,
+    light: #FFF,
+    grey: #AAA,
+    grey-light: #F0F0F0,
     primary: #CFB997,
     secondary: #823a40,
     text: (
-		dark: #333,
-		grey: #555
-    ),
+      dark: #333,
+      grey: #555
+      ),
     border: #E0E0E0
-  ),
-	media-queries: (
-		smartphone: "only screen and (max-width : 767px)",
-		smartphone-xl: "only screen and (min-width : 375px)",
-		smartphone-xxl: "only screen and (min-width : 550px)",
-		tablet-portrait: "only screen and (min-width : 768px)",
-		tablet-landscape: "only screen and (min-width : 1024px)",
-		laptop: "only screen and (min-width : 1200px)",
-		desktop: "only screen and (min-width : 1600px)",
-		desktop-xl: "only screen and (min-width : 1920px)",
-		desktop-xxl: "only screen and (min-width : 2100px)",
-		retina_display: "(-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3)"
-	),
-	limiter-sizes: (
-		xsmall: 400px,
-		small: 600px,
-		medium: 740px,
-		large: 1100px,
-		default: 1380px,
-		xlarge: 1600px
-	)
-);
+    ),
+  media-queries: (
+    smartphone: "only screen and (max-width : 767px)",
+    smartphone-xl: "only screen and (min-width : 375px)",
+    smartphone-xxl: "only screen and (min-width : 550px)",
+    tablet-portrait: "only screen and (min-width : 768px)",
+    tablet-landscape: "only screen and (min-width : 1024px)",
+    laptop: "only screen and (min-width : 1200px)",
+    desktop: "only screen and (min-width : 1600px)",
+    desktop-xl: "only screen and (min-width : 1920px)",
+    desktop-xxl: "only screen and (min-width : 2100px)",
+    retina_display: "(-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3)"
+    ),
+  limiter-sizes: (
+    xsmall: 400px,
+    small: 600px,
+    medium: 740px,
+    large: 1100px,
+    default: 1380px,
+    xlarge: 1600px
+    )
+  );
 
 @function theme($keys...) {
   $value: $theme;

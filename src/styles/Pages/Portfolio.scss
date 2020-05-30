@@ -1,38 +1,38 @@
 .portfolio-container {
-	.portfolio-nav {
-		ul {
-			font-weight: 600;
-			text-align: center;
-			font-size: 18px;
-			padding-bottom: 50px;
+  .portfolio-nav {
+    ul {
+      font-weight: 600;
+      text-align: center;
+      font-size: 18px;
+      padding-bottom: 50px;
 
-			li {
-				display: inline-block;
-				padding: 0 10px;
+      li {
+        display: inline-block;
+        padding: 0 10px;
 
-				a {
-					transition: color 500ms;
+        a {
+          transition: color 500ms;
 
-					&.selected {
-						color: theme(color, primary);
-					}
-				}
-			}
-		}
-	}
+          &.selected {
+            color: theme(color, primary);
+          }
+        }
+      }
+    }
+  }
 
-	/***
+  /***
   *** smartphone xxl ***
   ***/
   @media #{theme(media-queries, smartphone-xxl)} {
     .portfolio-nav {
-    	ul {
-    		font-size: 20px;
+      ul {
+        font-size: 20px;
 
-    		li a:hover {
-					color: theme(color, primary);
-    		}
-    	}
+        li a:hover {
+          color: theme(color, primary);
+        }
+      }
     }
   }
 
@@ -40,14 +40,14 @@
   *** laptop ***
   ***/
   @media #{theme(media-queries, laptop)} {
-		.portfolio-nav {
-    	ul {
-    		padding-bottom: 70px;
+    .portfolio-nav {
+      ul {
+        padding-bottom: 70px;
 
-    		li a {
-	    		font-size: 24px;
-	    	}
-	    }
+        li a {
+          font-size: 24px;
+        }
+      }
     }
   }
 
@@ -55,14 +55,14 @@
   *** desktop ***
   ***/
   @media #{theme(media-queries, desktop)} {
-		.portfolio-nav {
-			ul {
-				padding-bottom: 80px;
+    .portfolio-nav {
+      ul {
+        padding-bottom: 80px;
 
-				li a {
-	    		font-size: 30px;
-	    	}
-			}
+        li a {
+          font-size: 30px;
+        }
+      }
     }
   }
 
@@ -70,14 +70,14 @@
   *** desktop xl ***
   ***/
   @media #{theme(media-queries, desktop-xl)} {
-		.portfolio-nav {
-			ul {
-				padding-bottom: 90px;
+    .portfolio-nav {
+      ul {
+        padding-bottom: 90px;
 
-				li a {
-	    		font-size: 34px;
-	    	}
-			}
+        li a {
+          font-size: 34px;
+        }
+      }
     }
   }
 
@@ -85,20 +85,20 @@
   *** desktop xxl ***
   ***/
   @media #{theme(media-queries, desktop-xxl)} {
-		.portfolio-nav {
-			ul {
-				padding-bottom: 100px;
+    .portfolio-nav {
+      ul {
+        padding-bottom: 100px;
 
-				li a {
-	    		font-size: 36px;
-	    	}
-			}
+        li a {
+          font-size: 36px;
+        }
+      }
     }
   }
 }
 
 .fullscreen {
-	* {
-		color: theme(color, light);
-	}
+  * {
+    color: theme(color, light);
+  }
 }

@@ -1,108 +1,108 @@
 .pretitle-title {
-	text-align: center;
-	margin: auto;
-	position: relative;
-	text-transform: uppercase;
-	padding: 50px 0;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  text-transform: uppercase;
+  padding: 50px 0;
 
-	.pretitle {
-		margin: 0;
-		opacity: 0.5;
-		padding-bottom: 10px;
-		font-weight: 600;
-	}
+  .pretitle {
+    margin: 0;
+    opacity: 0.5;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
 
-	.title {
-		font-weight: 900;
-		margin: 0;
-		font-size: 40px;
-		letter-spacing: 2px;
-	}
+  .title {
+    font-weight: 900;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
 
-	/***
+  /***
   *** smartphone xxl ***
   ***/
   @media #{theme(media-queries, smartphone-xxl)} {
-		.pretitle {
-			font-size: 18px;
-		}
+    .pretitle {
+      font-size: 18px;
+    }
 
-		.title {
-			font-size: 50px;
-		}
+    .title {
+      font-size: 50px;
+    }
   }
 
   /***
   *** tablet-portrait ***
   ***/
   @media #{theme(media-queries, tablet-portrait)} {
-		padding: 60px 0;
+    padding: 60px 0;
   }
 
   /***
   *** tablet-landscape ***
   ***/
   @media #{theme(media-queries, tablet-landscape)} {
-		padding: 70px 0;
+    padding: 70px 0;
   }
 
   /***
   *** laptop ***
   ***/
   @media #{theme(media-queries, laptop)} {
-  	padding: 80px 0;
+    padding: 80px 0;
 
-		.pretitle {
-			font-size: 20px;
-		}
+    .pretitle {
+      font-size: 20px;
+    }
 
-		.title {
-			font-size: 60px;
-		}
+    .title {
+      font-size: 60px;
+    }
   }
 
   /***
   *** desktop ***
   ***/
   @media #{theme(media-queries, desktop)} {
-  	padding: 100px;
+    padding: 100px;
 
-  	.pretitle {
-			font-size: 22px;
-		}
+    .pretitle {
+      font-size: 22px;
+    }
 
-		.title {
-			font-size: 70px;
-		}
+    .title {
+      font-size: 70px;
+    }
   }
 
   /***
   *** desktop xl ***
   ***/
   @media #{theme(media-queries, desktop-xl)} {
-  	padding: 120px;
+    padding: 120px;
 
-  	.pretitle {
-			font-size: 24px;
-		}
+    .pretitle {
+      font-size: 24px;
+    }
 
-		.title {
-			font-size: 83px;
-		}
+    .title {
+      font-size: 83px;
+    }
   }
 
   /***
   *** desktop xxl ***
   ***/
   @media #{theme(media-queries, desktop-xxl)} {
-  	padding: 150px;
+    padding: 150px;
 
-  	.pretitle {
-			font-size: 28px;
-		}
+    .pretitle {
+      font-size: 28px;
+    }
 
-		.title {
-			font-size: 93px;
-		}
+    .title {
+      font-size: 93px;
+    }
   }
 }

@@ -1,18 +1,18 @@
 .header-menu {
   .nav-overlay {
-	  position: absolute;
-	  left: 24px;
-	  top: 20px;
-	  z-index: -1;
-	  border-radius: 50%;
-	  transition: transform 500ms;
-	  transform: scale3d(0, 0, 0);
-	  background-color: theme(color, dark);
-	}
+    position: absolute;
+    left: 24px;
+    top: 20px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms;
+    transform: scale3d(0, 0, 0);
+    background-color: theme(color, dark);
+  }
 
-	&.open {
-		.nav-overlay {
-		  transform: scale3d(1, 1, 1);
-		}	
-	}
+  &.open {
+    .nav-overlay {
+      transform: scale3d(1, 1, 1);
+    }	
+  }
 }

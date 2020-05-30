@@ -1,150 +1,150 @@
 .contact-container {
-	.contact-form {
-		transition: transform 500ms ease;
-		margin-top: 450px;
-					
-		&.visible{
-			transform: translate(0);
-		}
+  .contact-form {
+    transition: transform 500ms ease;
+    margin-top: 450px;
 
-		&.invisible{
-			transform: translateX(-100%) translateY(100%) translateY(-45px);
-		}
+    &.visible{
+      transform: translate(0);
+    }
 
-		form {
-			width: 100%;
-			max-width: 450px;
-			margin: auto;
+    &.invisible{
+      transform: translateX(-100%) translateY(100%) translateY(-45px);
+    }
 
-			.form-element {
-				margin-bottom: 20px;
-			}
+    form {
+      width: 100%;
+      max-width: 450px;
+      margin: auto;
 
-			input[type="submit"] {
-				border: none;
-				background-color: theme(color, dark);
-				color: theme(color, light);
-				padding: 10px 25px;
-				cursor: pointer;
-				width: 100%;
-				transition: background-color 500ms;
-			}
+      .form-element {
+        margin-bottom: 20px;
+      }
 
-			.message {
-				border-bottom: none;
-				font-weight: 400;
-				text-align: left;
+      input[type="submit"] {
+        border: none;
+        background-color: theme(color, dark);
+        color: theme(color, light);
+        padding: 10px 25px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 500ms;
+      }
 
-				&.success {
-					color: theme(color, primary);
-				}
+      .message {
+        border-bottom: none;
+        font-weight: 400;
+        text-align: left;
 
-				&.error {
-					color: theme(color, secondary);
-				}
-			}
-		}
+        &.success {
+          color: theme(color, primary);
+        }
 
-		/***
-	  *** smartphone xxl ***
-	  ***/
-	  @media #{theme(media-queries, smartphone-xxl)} {
-	    form input[type="submit"]:hover {
-				background-color: theme(color, primary);
-			}
-	  }
+        &.error {
+          color: theme(color, secondary);
+        }
+      }
+    }
 
-	  /***
-		*** tablet portrait ***
-		***/
-	  @media #{theme(media-queries, tablet-portrait)} {
-	  	margin-top: 0;
-	  	width: 50%;
-			margin-right: 0;
-	  }
+    /***
+    *** smartphone xxl ***
+    ***/
+    @media #{theme(media-queries, smartphone-xxl)} {
+      form input[type="submit"]:hover {
+        background-color: theme(color, primary);
+      }
+    }
 
-	  /***
-		*** tablet landscape ***
-		***/
-		@media #{theme(media-queries, tablet-landscape)} {
-			border: 1px solid theme(color, border);
-			width: 100%;
-			max-width: 425px;
-			background-color: theme(color, light);
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			z-index: 5;
-			padding-top: 25px;
-			padding-bottom: 25px;			
+    /***
+    *** tablet portrait ***
+    ***/
+    @media #{theme(media-queries, tablet-portrait)} {
+      margin-top: 0;
+      width: 50%;
+      margin-right: 0;
+    }
 
-			form {
-				text-align: right;
+    /***
+    *** tablet landscape ***
+    ***/
+    @media #{theme(media-queries, tablet-landscape)} {
+      border: 1px solid theme(color, border);
+      width: 100%;
+      max-width: 425px;
+      background-color: theme(color, light);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      padding-top: 25px;
+      padding-bottom: 25px;			
 
-				.form-element {
-					display: inline-block;
+      form {
+        text-align: right;
 
-					&:nth-of-type(1),
-					&:nth-of-type(2) {
-						width: calc(50% - 10px);
-					}
+        .form-element {
+          display: inline-block;
 
-					&:nth-of-type(1) {
-						margin-right: 20px;
-					}
-				}
+          &:nth-of-type(1),
+          &:nth-of-type(2) {
+            width: calc(50% - 10px);
+          }
 
-				input[type="submit"] {
-					max-width: 150px;
-				}
-				
-				.submit-message {
-					display: flex;
-					flex-direction: row-reverse;
-					align-items: center;
-					justify-content: space-between;
-					
-					.message {
-						margin: 0;
-				    padding: 0;
-				    margin-right: 15px;
-					}
-				}
-			}
-		}
+          &:nth-of-type(1) {
+            margin-right: 20px;
+          }
+        }
 
-		/***
-	  *** desktop ***
-	  ***/
-	  @media #{theme(media-queries, desktop)} {
-	  	max-width: inherit;
-	  	width: 480px;
+        input[type="submit"] {
+          max-width: 150px;
+        }
 
-	  	&.invisible{
-				transform: translateX(-100%) translateY(100%) translateY(-55px);
-			}
+        .submit-message {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
 
-	  	form {
-	  		max-width: inherit;
-	  	}
-	  }
+          .message {
+            margin: 0;
+            padding: 0;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
 
-	  /***
-	  *** desktop xl***
-	  ***/
-	  @media #{theme(media-queries, desktop-xl)} {
-	  	width: 520px;
-	  }
+    /***
+    *** desktop ***
+    ***/
+    @media #{theme(media-queries, desktop)} {
+      max-width: inherit;
+      width: 480px;
 
-	  /***
-	  *** desktop xxl***
-	  ***/
-	  @media #{theme(media-queries, desktop-xxl)} {
-	  	width: 580px;
+      &.invisible{
+        transform: translateX(-100%) translateY(100%) translateY(-55px);
+      }
 
-	  	&.invisible{
-				transform: translateX(-100%) translateY(100%) translateY(-60px);
-			}
-	  }
-	}
+      form {
+        max-width: inherit;
+      }
+    }
+
+    /***
+    *** desktop xl***
+    ***/
+    @media #{theme(media-queries, desktop-xl)} {
+      width: 520px;
+    }
+
+    /***
+    *** desktop xxl***
+    ***/
+    @media #{theme(media-queries, desktop-xxl)} {
+      width: 580px;
+
+      &.invisible{
+        transform: translateX(-100%) translateY(100%) translateY(-60px);
+      }
+    }
+  }
 }

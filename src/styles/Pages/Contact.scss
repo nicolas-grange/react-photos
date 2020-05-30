@@ -1,122 +1,122 @@
 .contact-container {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	.contact-info {
-		.pretitle-title {
-			max-width: 400px;
-    	
-			&::after {
-				content:"";
-				max-width: 500px;
-				width: 50%;
-				height: 2px;
-				background: theme(color, primary);
-				position: absolute;
-				bottom: 0;
-				left: 25%;
-				display: block;
-			}
-		}
-	}
+  .contact-info {
+    .pretitle-title {
+      max-width: 400px;
 
-	/***
-	*** tablet portrait ***
-	***/
-	@media #{theme(media-queries, tablet-portrait)} {
-		.map-container {
-			display: flex;
-		}
-	}
+      &::after {
+        content:"";
+        max-width: 500px;
+        width: 50%;
+        height: 2px;
+        background: theme(color, primary);
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        display: block;
+      }
+    }
+  }
 
-	/***
-	*** tablet landscape ***
-	***/
-	@media #{theme(media-queries, tablet-landscape)} {
-		flex-direction: row;
+  /***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+    .map-container {
+      display: flex;
+    }
+  }
 
-		section {
-			height: 100vh;
+  /***
+  *** tablet landscape ***
+  ***/
+  @media #{theme(media-queries, tablet-landscape)} {
+    flex-direction: row;
 
-			&.contact-info {
-				background-color: theme(color, dark);
-				width: 45%;
-				max-width: 600px;
-				min-width: 350px;
-				
-				.wrapper-intern {
-					display: flex;
-					align-items: flex-end;
-					flex-direction: column;
-					height: 100%;
+    section {
+      height: 100vh;
 
-					.pretitle-title {
-			    	text-align: right;
-			    	margin-top: 0;
-			    	margin-right: 0;
-			    	margin-bottom: 0;
-			    	padding-top: 50px;
-			    	padding-bottom: 50px;
-			    	padding-right: 0;
+      &.contact-info {
+        background-color: theme(color, dark);
+        width: 45%;
+        max-width: 600px;
+        min-width: 350px;
 
-						.title, 
-						.pretitle {
-							color: theme(color, light);
-						}
+        .wrapper-intern {
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+          height: 100%;
 
-						&::after {
-							right: 0;
-							left: inherit;
-							width: 100%;
-							bottom: 0;
-						}
-					}
-				}
-			}
+          .pretitle-title {
+            text-align: right;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 0;
 
-			&.map-container {
-				display: inherit;
-				flex: 1;
-				position: relative;
-				overflow: hidden;
-			}
-		}
-	}
+            .title, 
+            .pretitle {
+              color: theme(color, light);
+            }
 
-	/***
-	*** desktop ***
-	***/
-	@media #{theme(media-queries, desktop)} {
-		section {
-			&.contact-info {
-				max-width: 700px;
+            &::after {
+              right: 0;
+              left: inherit;
+              width: 100%;
+              bottom: 0;
+            }
+          }
+        }
+      }
 
-				.pretitle-title {
-					max-width: inherit;
-				}
-			}
-		}
-	}
+      &.map-container {
+        display: inherit;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  }
 
-	/***
-	*** desktop xl ***
-	***/
-	@media #{theme(media-queries, desktop-xl)} {
-		section {
-			&.contact-info {
-				max-width: 1000px;
-			}
-		}
-	}
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+    section {
+      &.contact-info {
+        max-width: 700px;
 
-	/***
-	*** desktop xxl ***
-	***/
-	@media #{theme(media-queries, desktop-xxl)} {
-		section {
-			&.contact-info {
-				max-width: 1100px;
-			}
-		}
-	}
+        .pretitle-title {
+          max-width: inherit;
+        }
+      }
+    }
+  }
+
+  /***
+  *** desktop xl ***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+    section {
+      &.contact-info {
+        max-width: 1000px;
+      }
+    }
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+    section {
+      &.contact-info {
+        max-width: 1100px;
+      }
+    }
+  }
 }

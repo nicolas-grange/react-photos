@@ -1,153 +1,153 @@
 .form-element {
-	width: 100%;
-	min-height: 50px;
-	position: relative;
-	background: theme(color, light);
-	padding: 20px;
-	border: 1px solid theme(color, border);
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+  background: theme(color, light);
+  padding: 20px;
+  border: 1px solid theme(color, border);
 
-	label {
-		color: theme(color, grey);
-		position: absolute;
-		left: 20px;
-		top: 20px;
-		margin: 0;
-		font-weight: lighter;
-		z-index: 2;
-		pointer-events: none;
-		font-size: 14px;
-		line-height: 10px;
-		transition: top 300ms, color 300ms;
+  label {
+    color: theme(color, grey);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    margin: 0;
+    font-weight: lighter;
+    z-index: 2;
+    pointer-events: none;
+    font-size: 14px;
+    line-height: 10px;
+    transition: top 300ms, color 300ms;
 
-		&.focus {
-			top: 7px;
-			font-size: 12px;
-			color: theme(color, primary);
-		}
-	}
+    &.focus {
+      top: 7px;
+      font-size: 12px;
+      color: theme(color, primary);
+    }
+  }
 
-	input, textarea {
-		background: transparent;
-		border: none;
-		position: absolute;
-		left: 0;
-		top: 0;
-		color: theme(color, text, dark);
-		font-size: 16px;
-		width: 100%;
-		line-height: 1;
-		z-index: 2;
-		padding: 10px 20px 5px;
-	}
+  input, textarea {
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: theme(color, text, dark);
+    font-size: 16px;
+    width: 100%;
+    line-height: 1;
+    z-index: 2;
+    padding: 10px 20px 5px;
+  }
 
-	input {
-		height: 50px;
-	}
+  input {
+    height: 50px;
+  }
 
-	textarea {
-		top: 20px;
-		height: 130px;
-		resize: none;
-		padding-top: 0;
-	}
+  textarea {
+    top: 20px;
+    height: 130px;
+    resize: none;
+    padding-top: 0;
+  }
 
-	&.textarea {
-		min-height: 150px;
-	}
+  &.textarea {
+    min-height: 150px;
+  }
 
   /***
   *** desktop ***
   ***/
   @media #{theme(media-queries, desktop)} {
-		min-height: 55px;
+    min-height: 55px;
 
-		label {
-			top: 20px;
-			font-size: 16px;
-			line-height: 12px;
+    label {
+      top: 20px;
+      font-size: 16px;
+      line-height: 12px;
 
-			&.focus {
-				top: 10px;
-				font-size: 14px;
-			}
-		}
+      &.focus {
+        top: 10px;
+        font-size: 14px;
+      }
+    }
 
-		input, textarea {
-			font-size: 17px;
-			padding: 25px 20px 10px;
-		}
+    input, textarea {
+      font-size: 17px;
+      padding: 25px 20px 10px;
+    }
 
-		input {
-			height: 55px;
-		}
+    input {
+      height: 55px;
+    }
 
-		textarea {
-			padding-top: 0;
-			top: 25px;
-		}
+    textarea {
+      padding-top: 0;
+      top: 25px;
+    }
   }
 
   /***
   *** desktop xl***
   ***/
   @media #{theme(media-queries, desktop-xl)} {
-		min-height: 60px;
+    min-height: 60px;
 
-		label {
-			top: 20px;
-			font-size: 18px;
-			line-height: 14px;
+    label {
+      top: 20px;
+      font-size: 18px;
+      line-height: 14px;
 
-			&.focus {
-				top: 10px;
-				font-size: 16px;
-			}
-		}
+      &.focus {
+        top: 10px;
+        font-size: 16px;
+      }
+    }
 
-		input, textarea {
-			font-size: 18px;
-			padding: 30px 20px 10px;
-		}
+    input, textarea {
+      font-size: 18px;
+      padding: 30px 20px 10px;
+    }
 
-		input {
-			height: 60px;
-		}
+    input {
+      height: 60px;
+    }
 
-		textarea {
-			padding-top: 0;
-			top: 30px;
-		}
+    textarea {
+      padding-top: 0;
+      top: 30px;
+    }
   }
 
   /***
   *** desktop xxl***
   ***/
   @media #{theme(media-queries, desktop-xxl)} {
-		min-height: 70px;
+    min-height: 70px;
 
-		label {
-			top: 28px;
-			font-size: 22px;
-			line-height: 14px;
+    label {
+      top: 28px;
+      font-size: 22px;
+      line-height: 14px;
 
-			&.focus {
-				top: 10px;
-				font-size: 20px;
-			}
-		}
+      &.focus {
+        top: 10px;
+        font-size: 20px;
+      }
+    }
 
-		input, textarea {
-			font-size: 22px;
-			padding: 25px 20px 15px;
-		}
+    input, textarea {
+      font-size: 22px;
+      padding: 25px 20px 15px;
+    }
 
-		input {
-			height: 70px;
-		}
+    input {
+      height: 70px;
+    }
 
-		textarea {
-			padding-top: 0;
-			top: 35px;
-		}
+    textarea {
+      padding-top: 0;
+      top: 35px;
+    }
   }
 }

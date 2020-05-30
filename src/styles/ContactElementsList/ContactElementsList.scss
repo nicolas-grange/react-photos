@@ -1,194 +1,192 @@
 .contact-elements-list {
-	max-width: 250px;
-	margin: auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	z-index: 2;
+  max-width: 250px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 2;
 
-	li {
-		padding: 25px 0;
+  li {
+    padding: 25px 0;
 
-		&:first-of-type {
-			padding-top: 0;
-		}
+    &:first-of-type {
+      padding-top: 0;
+    }
 
-		&:last-of-type {
-			padding-bottom: 0;
-		}
-		
-		&.contact-element-container,
-		.contact-element-container {
-			display: flex;
-			align-items: center;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
 
-			svg {
-				width: 30px;
-				height: 30px;
-				margin-right: 25px;
+    &.contact-element-container,
+    .contact-element-container {
+      display: flex;
+      align-items: center;
 
-				path {
-					fill: theme(color, primary);
-				}
-			}
+      svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 25px;
 
-			.contact-element {
-				display: flex;
-				flex-direction: column;
+        path {
+          fill: theme(color, primary);
+        }
+      }
 
-				address {
-					font-style: normal;
-					line-height: 1.5;
-				}
+      .contact-element {
+        display: flex;
+        flex-direction: column;
 
-				span {
-					transition: color 500ms;
-				}
+        address {
+          font-style: normal;
+          line-height: 1.5;
+        }
 
-				.title {
-					padding-bottom: 10px;
-					font-weight: 700;
-					opacity: 0.9;
-				}
+        span {
+          transition: color 500ms;
+        }
 
-			}
-		}
-	}
+        .title {
+          padding-bottom: 10px;
+          font-weight: 700;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
 
-	/***
-	*** smartphone xxl ***
-	***/
-	@media #{theme(media-queries, smartphone-xxl)} {
-		li {
-			a.contact-element-container:hover {
-				span {
-					color: theme(color, primary);
-				}
-			}
-		}
-	}
+  /***
+  *** smartphone xxl ***
+  ***/
+  @media #{theme(media-queries, smartphone-xxl)} {
+    li {
+      a.contact-element-container:hover {
+        span {
+          color: theme(color, primary);
+        }
+      }
+    }
+  }
 
-	/***
-	*** tablet portrait ***
-	***/
-	@media #{theme(media-queries, tablet-portrait)} {
-		display: flex;
-		justify-content: space-around;
-		max-width: inherit;
+  /***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+    display: flex;
+    justify-content: space-around;
+    max-width: inherit;
 
-		li, 
-		li:first-of-type, 
-		li:last-of-type {
-			padding: 25px 0;
-		}
+    li, 
+    li:first-of-type, 
+    li:last-of-type {
+      padding: 25px 0;
+    }
 
-		li {
-			&:last-of-type {
-				padding-bottom: 0;
-			}
+    li {
+      &:last-of-type {
+        padding-bottom: 0;
+      }
 
-			&.contact-element-container,
-			.contact-element-container {
-				align-items: inherit;
-			}
-		}
-	}
+      &.contact-element-container,
+      .contact-element-container {
+        align-items: inherit;
+      }
+    }
+  }
 
-	/***
-	*** tablet landscape ***
-	***/
-	@media #{theme(media-queries, tablet-landscape)} {
-		margin-right: 100px;
-		padding-top: 0;
-		padding-bottom: 15px;
-		height: 100%;
+  /***
+  *** tablet landscape ***
+  ***/
+  @media #{theme(media-queries, tablet-landscape)} {
+    margin-right: 100px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    height: 100%;
     flex-direction: column;
     max-height: 350px;
     justify-content: space-around;
 
-		li {
-			&,
-			&:first-of-type,
-			&:last-of-type {
-				padding: 0;
-			}
+    li {
+      &,
+      &:first-of-type,
+      &:last-of-type {
+        padding: 0;
+      }
 
-			&.contact-element-container,
-			.contact-element-container {
-				.contact-element {
-					address,
-					span {
-						color: theme(color, grey);
-					}
+      &.contact-element-container,
+      .contact-element-container {
+        .contact-element {
+          address,
+          span {
+            color: theme(color, grey);
+          }
 
-					.title {
-						opacity: 0.9;
-						color: theme(color, light);
-					}
+          .title {
+            opacity: 0.9;
+            color: theme(color, light);
+          }
+        }
+      }
+    }
+  }
 
-				}
-			}
-		}
-	}
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+    margin-right: 200px;
+    max-height: 400px;
 
-	/***
-	*** desktop ***
-	***/
-	@media #{theme(media-queries, desktop)} {
-		margin-right: 200px;
-		max-height: 400px;
+    li {
+      font-size: inherit;
+      &.contact-element-container,
+      .contact-element-container {
 
-		li {
-			font-size: inherit;
-			&.contact-element-container,
-			.contact-element-container {
+        svg {
+          width: 35px;
+          height: 35px;
+        }
+      }
 
-				svg {
-					width: 35px;
-					height: 35px;
-				}
-			}
+      &.contact-element-container {
+        span {
+          &.title {
+            font-size: 1.1em;
+          }	
+        }
+      }
+    }
+  }
 
-			&.contact-element-container {
-				span {
-					&.title {
-						font-size: 1.1em;
-					}	
-				}
-			}
-		}
-	}
+  /***
+  *** desktop xl ***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+    max-height: 500px;
 
-	/***
-	*** desktop xl ***
-	***/
-	@media #{theme(media-queries, desktop-xl)} {
-		max-height: 500px;
+    li {
+      &.contact-element-container {
+        span {
+          &.title {
+            font-size: 1.3em;
+          }	
+        }
+      }
+    }
+  }
 
-		li {
-			&.contact-element-container {
-				span {
-					&.title {
-						font-size: 1.3em;
-					}	
-				}
-			}
-		}
-	}
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+    max-height: 550px;
 
-	/***
-	*** desktop xxl ***
-	***/
-	@media #{theme(media-queries, desktop-xxl)} {
-		max-height: 550px;
-
-		li {
-			&.contact-element-container {
-				span {
-					&.title {
-						font-size: 1.6em;
-					}	
-				}
-			}
-		}
-	}
+    li {
+      &.contact-element-container {
+        span {
+          &.title {
+            font-size: 1.6em;
+          }	
+        }
+      }
+    }
+  }
 }

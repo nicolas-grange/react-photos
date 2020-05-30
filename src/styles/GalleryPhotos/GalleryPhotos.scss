@@ -1,9 +1,9 @@
 .gallery-photos {
-	img {
-		transition: opacity 500ms;
+  img {
+    transition: opacity 500ms;
 
-		&:hover {
-			opacity: 0.8;
-		}
-	}
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }

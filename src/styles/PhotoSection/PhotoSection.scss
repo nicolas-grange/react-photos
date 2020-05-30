@@ -1,41 +1,41 @@
 .photo-section {
-	display: flex;
-	min-height: 300px;
-	background: theme(color, dark);
-	align-items: center;
+  display: flex;
+  min-height: 300px;
+  background: theme(color, dark);
+  align-items: center;
 
-	figure {
-		margin: 0;
-		position: relative;
-		width: 100%;
-		min-height: 400px;
-		max-width: 630px;
-		margin: auto;
+  figure {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    max-width: 630px;
+    margin: auto;
 
-		img {
-			position: absolute;
-			height:100%;
-			width: 100%;
-			top: 0;
-			left: 0;
-			object-fit: cover;
-			font-family: 'object-fit: cover;';
-		}
-	}
+    img {
+      position: absolute;
+      height:100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      font-family: 'object-fit: cover;';
+    }
+  }
 
-	/***
-	*** tablet portrait ***
-	***/
-	@media #{theme(media-queries, tablet-portrait)} {
-		figure {
-			height: 100vh;
-			min-height: inherit;
-			max-width: inherit;
+  /***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+    figure {
+      height: 100vh;
+      min-height: inherit;
+      max-width: inherit;
 
-			img {
-				max-height: 90vh;
-				top: 10vh;
-			}
-		}
-	}
+      img {
+        max-height: 90vh;
+        top: 10vh;
+      }
+    }
+  }
 }

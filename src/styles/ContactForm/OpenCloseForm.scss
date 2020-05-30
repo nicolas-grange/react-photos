@@ -1,177 +1,177 @@
 .contact-form {
-	.open-close-form {
-		display: none;
-	}
+  .open-close-form {
+    display: none;
+  }
 
   /***
-	*** tablet landscape ***
-	***/
-	@media #{theme(media-queries, tablet-landscape)} {
-		.open-close-form {
-			display: flex;
-			justify-content: center;
-			position: absolute;
-			background: theme(color, dark);
-			right: -45px;
-			top: 0;
-			z-index: 100;
-			padding: 21px 10px;
-			transition: background 500ms;
-			cursor: pointer;
-			width: 45px;
-			height: 45px;
+  *** tablet landscape ***
+  ***/
+  @media #{theme(media-queries, tablet-landscape)} {
+    .open-close-form {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      background: theme(color, dark);
+      right: -45px;
+      top: 0;
+      z-index: 100;
+      padding: 21px 10px;
+      transition: background 500ms;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
 
-			&:hover {
-				background: theme(color, primary);
-			}
+      &:hover {
+        background: theme(color, primary);
+      }
 
-			span {
-				position: relative;
-				display: block;
-				width: 18px;
-				height: 2px;
-				background: theme(color, light);
+      span {
+        position: relative;
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: theme(color, light);
 
-				&::before,
-				&::after {
-					display: block;
-					content: "";
-					position: absolute;
-					width: 10px;
-					height: 2px;
-					left: 0;
-					background: theme(color, light);
-					transition: margin 500ms 500ms ease, transform 500ms 500ms;
-				}
+        &::before,
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 2px;
+          left: 0;
+          background: theme(color, light);
+          transition: margin 500ms 500ms ease, transform 500ms 500ms;
+        }
 
-				&::before {
-					top: -3px;
-				}
+        &::before {
+          top: -3px;
+        }
 
-				&::after {
-					top: 3px;
-				}
-			}
-		}
+        &::after {
+          top: 3px;
+        }
+      }
+    }
 
-		&.visible {  
-			.open-close-form {
-				span {
-					&:before,
-					&::after {
-						margin-left: -2px;
-					}
-					
-					&::before {
-						transform: rotate(-45deg);
-					}
+    &.visible {  
+      .open-close-form {
+        span {
+          &:before,
+          &::after {
+            margin-left: -2px;
+          }
 
-					&::after {
-						transform: rotate(45deg);
-					} 
-				}
-			}		
-		}
+          &::before {
+            transform: rotate(-45deg);
+          }
 
-		&.invisible {
-			.open-close-form {
-				span {
-					&::before,
-					&::after {
-						margin-left: 10px;
-					}
+          &::after {
+            transform: rotate(45deg);
+          } 
+        }
+      }		
+    }
 
-					&::before {
-						transform: rotate(45deg);
-					}
+    &.invisible {
+      .open-close-form {
+        span {
+          &::before,
+          &::after {
+            margin-left: 10px;
+          }
 
-					&::after{
-						transform: rotate(-45deg);
-					} 
-				}
-			}
-		}
-	}
+          &::before {
+            transform: rotate(45deg);
+          }
 
-	/***
+          &::after{
+            transform: rotate(-45deg);
+          } 
+        }
+      }
+    }
+  }
+
+  /***
   *** desktop ***
   ***/
   @media #{theme(media-queries, desktop)} {
-		.open-close-form {
-			right: -55px;
-			padding: 25px 10px;
-			width: 55px;
-			height: 55px;
+    .open-close-form {
+      right: -55px;
+      padding: 25px 10px;
+      width: 55px;
+      height: 55px;
 
-			span {
-				width: 23px;
-				height: 3px;
+      span {
+        width: 23px;
+        height: 3px;
 
-				&::before,
-				&::after {
-					width: 12px;
-					height: 3px;
-				}
+        &::before,
+        &::after {
+          width: 12px;
+          height: 3px;
+        }
 
-				&::before {
-					top: -4px;
-				}
+        &::before {
+          top: -4px;
+        }
 
-				&::after {
-					top: 4px;
-				}
-			}
-		}
+        &::after {
+          top: 4px;
+        }
+      }
+    }
 
-		&.invisible {
-			.open-close-form {
-				span {
-					&::before,
-					&::after {
-						margin-left: 15px;
-					}
-				}
-			}
-		}
+    &.invisible {
+      .open-close-form {
+        span {
+          &::before,
+          &::after {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
   }
 
   /***
   *** desktop xxl ***
   ***/
   @media #{theme(media-queries, desktop-xxl)} {
-		.open-close-form {
-			right: -60px;
-			padding: 29px 10px;
-			width: 60px;
-			height: 60px;
+    .open-close-form {
+      right: -60px;
+      padding: 29px 10px;
+      width: 60px;
+      height: 60px;
 
-			span {
-				width: 30px;
+      span {
+        width: 30px;
 
-				&::before,
-				&::after {
-					width: 15px;
-				}
+        &::before,
+        &::after {
+          width: 15px;
+        }
 
-				&::before {
-					top: -5px;
-				}
+        &::before {
+          top: -5px;
+        }
 
-				&::after {
-					top: 5px;
-				}
-			}
-		}
+        &::after {
+          top: 5px;
+        }
+      }
+    }
 
-		&.invisible {
-			.open-close-form {
-				span {
-					&::before,
-					&::after {
-						margin-left: 16px;
-					}
-				}
-			}
-		}
+    &.invisible {
+      .open-close-form {
+        span {
+          &::before,
+          &::after {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
   }
 }

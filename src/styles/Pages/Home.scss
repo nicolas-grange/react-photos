@@ -1,139 +1,139 @@
 .home-container {
-	width: 100%;
-	overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 
-	section {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		position: relative;
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
 
-		h3 {
-			color: theme(color, primary);
-			opacity: 1;
-		}
-	}
+    h3 {
+      color: theme(color, primary);
+      opacity: 1;
+    }
+  }
 
-	.introduction-section {
-		padding-top: 0;
-		padding-bottom: 0;
-		display: flex;
-		background-color: theme(color, dark);
-		flex-direction: column;
-		height: 100vh;
-		justify-content: space-between;
-		background: url("../../assets/images/home/intro-mobile.png") center no-repeat;
-		background-size: cover;
+  .introduction-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    background-color: theme(color, dark);
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background: url("../../assets/images/home/intro-mobile.png") center no-repeat;
+    background-size: cover;
 
-		.infos {
-			padding-left: 20px; 
-			margin-top: auto;
-			margin-bottom: auto;
+    .infos {
+      padding-left: 20px; 
+      margin-top: auto;
+      margin-bottom: auto;
 
-			p {
-				color: theme(color, primary);
-				font-size: 22px;
-				font-weight: 700;
-				margin: 0;
-			}
+      p {
+        color: theme(color, primary);
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0;
+      }
 
-			h2 {
-				color: theme(color, light);
-				font-weight: 900;
-				margin: 0 0 50px;
-				font-size: 35px;
-				line-height: 45px;
-			}
-		}
+      h2 {
+        color: theme(color, light);
+        font-weight: 900;
+        margin: 0 0 50px;
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
 
-		.scroll-icon {
-			display: none;
-		}
-		
-		.social-networks {
-			margin: 0 auto 15px;
-			width: 100%;
-			max-width: 300px;
-			justify-content: space-around;
+    .scroll-icon {
+      display: none;
+    }
 
-			a {
-				padding: 0;
-			}
-		}
-	}
+    .social-networks {
+      margin: 0 auto 15px;
+      width: 100%;
+      max-width: 300px;
+      justify-content: space-around;
 
-	.about-section {
-		padding-top: 0;
-	}
+      a {
+        padding: 0;
+      }
+    }
+  }
 
-	.portfolio-section {
-		background: theme(color, grey-light);
+  .about-section {
+    padding-top: 0;
+  }
 
-		&::before {
-			position: absolute;
-			width: 100vw;
-			height: 0;
-			left: 0;
-			content: "";
-			border-bottom: 50px solid theme(color, grey-light);
-			display: block;
-			top: 0;
-			border-left: 100vw solid theme(color, light);
-		}
-	}
+  .portfolio-section {
+    background: theme(color, grey-light);
 
-	.contact-section {
-		background: theme(color, dark);
+    &::before {
+      position: absolute;
+      width: 100vw;
+      height: 0;
+      left: 0;
+      content: "";
+      border-bottom: 50px solid theme(color, grey-light);
+      display: block;
+      top: 0;
+      border-left: 100vw solid theme(color, light);
+    }
+  }
 
-		&::before {
-			position: absolute;
-			width: 100vw;
-			height: 0;
-			left: 0;
-			content: "";
-			border-bottom: 50px solid transparent;
-			display: block;
-			top: 0;
-			border-left: 100vw solid theme(color, grey-light);
-		}
+  .contact-section {
+    background: theme(color, dark);
 
-		* {
-			color: theme(color, light);
-		}
+    &::before {
+      position: absolute;
+      width: 100vw;
+      height: 0;
+      left: 0;
+      content: "";
+      border-bottom: 50px solid transparent;
+      display: block;
+      top: 0;
+      border-left: 100vw solid theme(color, grey-light);
+    }
 
-		.contact-infos-container {
-			position: relative;
+    * {
+      color: theme(color, light);
+    }
 
-			p {
-				margin-top: 0;
-			}
+    .contact-infos-container {
+      position: relative;
 
-			ul {
-				padding-left: 40px;
+      p {
+        margin-top: 0;
+      }
 
-				li {
-					position: relative;
+      ul {
+        padding-left: 40px;
 
-					&::before {
-						content: "";
-						display: block;
-						border-radius: 50%;
-						width: 8px;
-						height: 8px;
-						background: theme(color, primary);
-						position: absolute;
-						top: 50%;
-						transform: translateY(-50%);
-						left: -20px;
-					}
-				}
-			}
+        li {
+          position: relative;
 
-			.button {
-				margin-top: 50px;
-			}
+          &::before {
+            content: "";
+            display: block;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background: theme(color, primary);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -20px;
+          }
+        }
+      }
 
-			span {
-				color: theme(color, light);
+      .button {
+        margin-top: 50px;
+      }
+
+      span {
+        color: theme(color, light);
         font-weight: 900;
         display: block;
         position: absolute;
@@ -147,308 +147,308 @@
         white-space: nowrap;
         pointer-events: none;
         transform: translate(150px, -30px);
-			}
-		}	
-	}
-	
-	/***
+      }
+    }	
+  }
+
+  /***
   *** smartphone ***
   ***/
   @media #{theme(media-queries, smartphone)} {
-		.introduction-section {
-			height: calc(100vh - 56px);
-		}
+    .introduction-section {
+      height: calc(100vh - 56px);
+    }
   }
 
-	/***
+  /***
   *** smartphone xxl ***
   ***/
   @media #{theme(media-queries, smartphone-xxl)} {
     .introduction-section {
-			background: url("../../assets/images/home/intro-mobile-plus.png") center no-repeat;
-			background-size: cover;
+      background: url("../../assets/images/home/intro-mobile-plus.png") center no-repeat;
+      background-size: cover;
 
-			.infos {
-				padding-left: 20px; 
+      .infos {
+        padding-left: 20px; 
 
-				p {
-					font-size: 24px;
-					font-weight: 700;
-				}
+        p {
+          font-size: 24px;
+          font-weight: 700;
+        }
 
-				h2 {
-					font-size: 40px;
-					line-height: 50px;
-				}
-			}
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
 
-			.social-networks {
-				margin: 0 0 15px;
-			}
-		}
+      .social-networks {
+        margin: 0 0 15px;
+      }
+    }
   }
 
   /***
   *** tablet portrait ***
   ***/
   @media #{theme(media-queries, tablet-portrait)} {
-  	section {
-			padding-top: 70px;
-			padding-bottom: 60px;
-		}
+    section {
+      padding-top: 70px;
+      padding-bottom: 60px;
+    }
 
-  	.introduction-section {
-  		.infos {
-  			padding-left: 0;
-  			padding-top: 100px;
-  			max-width: 500px;
-  			margin-left: 20%;
+    .introduction-section {
+      .infos {
+        padding-left: 0;
+        padding-top: 100px;
+        max-width: 500px;
+        margin-left: 20%;
 
-  			p {
-					font-size: 28px;
-				}
+        p {
+          font-size: 28px;
+        }
 
-				h2 {
-					font-size: 45px;
-					line-height: 55px;
-				}
-  		}
+        h2 {
+          font-size: 45px;
+          line-height: 55px;
+        }
+      }
 
-  		.scroll-icon {
-				display: inline-block;
-				width: 60px;
-				margin-left: auto;
-				margin-right: auto;
-				padding-bottom: 15px;
-			}
+      .scroll-icon {
+        display: inline-block;
+        width: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 15px;
+      }
 
-  		.social-networks {
-	  		position: absolute;
-	  		max-width: 60px;
-				text-align: center;
-				left: 25px;
-				max-height: 280px;
-				bottom: 0;
-	  	}
-  	}
+      .social-networks {
+        position: absolute;
+        max-width: 60px;
+        text-align: center;
+        left: 25px;
+        max-height: 280px;
+        bottom: 0;
+      }
+    }
 
-  	.portfolio-section {
-  		&::before {
-				border-bottom: 70px solid theme(color, grey-light);
-			}
-  	}
+    .portfolio-section {
+      &::before {
+        border-bottom: 70px solid theme(color, grey-light);
+      }
+    }
 
-  	.contact-section {
-  		text-align: center;
+    .contact-section {
+      text-align: center;
 
-  		&::before {
-  			border-bottom: 70px solid transparent;
-  		}
+      &::before {
+        border-bottom: 70px solid transparent;
+      }
 
-  		.contact-infos-container {
-  			text-align: left;
-  			display: inline-block;
-  			margin: auto;
-  		}
-  	}
+      .contact-infos-container {
+        text-align: left;
+        display: inline-block;
+        margin: auto;
+      }
+    }
   }
 
   /***
   *** tablet landscape ***
   ***/
   @media #{theme(media-queries, tablet-landscape)} {
-  	section {
-			padding-top: 90px;
-			padding-bottom: 70px;
-		}
-  
-  	.introduction-section {
-  		background: url("../../assets/images/home/intro-tablet.png") center no-repeat;
-			background-size: cover;
+    section {
+      padding-top: 90px;
+      padding-bottom: 70px;
+    }
 
-  		.infos {
-  			padding-left: 0;
+    .introduction-section {
+      background: url("../../assets/images/home/intro-tablet.png") center no-repeat;
+      background-size: cover;
 
-  			p {
-					font-size: 32px;
-				}
+      .infos {
+        padding-left: 0;
 
-				h2 {
-					font-size: 55px;
-					line-height: 65px;
-				}
-  		}
+        p {
+          font-size: 32px;
+        }
 
-  		.social-networks {
-				max-height: 300px;
-	  	}
-  	}
+        h2 {
+          font-size: 55px;
+          line-height: 65px;
+        }
+      }
 
-  	.portfolio-section {
-  		&::before {
-				border-bottom: 90px solid theme(color, grey-light);
-			}
-  	}
+      .social-networks {
+        max-height: 300px;
+      }
+    }
 
-  	.contact-section {
-  		&::before {
-  			border-bottom: 90px solid transparent;
-  		}
-  	}
+    .portfolio-section {
+      &::before {
+        border-bottom: 90px solid theme(color, grey-light);
+      }
+    }
+
+    .contact-section {
+      &::before {
+        border-bottom: 90px solid transparent;
+      }
+    }
   }
 
   /***
   *** laptop ***
   ***/
   @media #{theme(media-queries, laptop)} {
-  	section {
-  		padding-top: 130px;
-  		padding-bottom: 80px;
-  	}
+    section {
+      padding-top: 130px;
+      padding-bottom: 80px;
+    }
 
-  	.portfolio-section {
-  		&::before {
-				border-bottom: 130px solid theme(color, grey-light);
-			}
-  	}
+    .portfolio-section {
+      &::before {
+        border-bottom: 130px solid theme(color, grey-light);
+      }
+    }
 
-  	.contact-section {
-  		&::before {
-  			border-bottom: 130px solid transparent;
-  		}
-  	}
+    .contact-section {
+      &::before {
+        border-bottom: 130px solid transparent;
+      }
+    }
   }
 
   /***
   *** desktop ***
   ***/
   @media #{theme(media-queries, desktop)} {
-  	section {
-  		padding-top: 180px;
-  		padding-bottom: 100px;
-  	}
+    section {
+      padding-top: 180px;
+      padding-bottom: 100px;
+    }
 
-  	.introduction-section {
-  		.infos {
-  			p {
-					font-size: 40px;
-				}
+    .introduction-section {
+      .infos {
+        p {
+          font-size: 40px;
+        }
 
-				h2 {
-					font-size: 65px;
-					line-height: 75px;
-				}
-  		}
+        h2 {
+          font-size: 65px;
+          line-height: 75px;
+        }
+      }
 
-  		.scroll-icon {
-				width: 70px;
-			}
+      .scroll-icon {
+        width: 70px;
+      }
 
-  		.social-networks {
-				max-height: 320px;
-	  	}
-  	}
+      .social-networks {
+        max-height: 320px;
+      }
+    }
 
-  	.portfolio-section {
-  		&::before {
-				border-bottom: 180px solid theme(color, grey-light);
-			}
-  	}
+    .portfolio-section {
+      &::before {
+        border-bottom: 180px solid theme(color, grey-light);
+      }
+    }
 
-  	.contact-section {
-  		&::before {
-  			border-bottom: 180px solid transparent;
-  		}
-  	}
+    .contact-section {
+      &::before {
+        border-bottom: 180px solid transparent;
+      }
+    }
   }
 
   /***
   *** desktop xl ***
   ***/
   @media #{theme(media-queries, desktop-xl)} {
-  	section {
-  		padding-top: 220px;
-  		padding-bottom: 120px;
-  	}
+    section {
+      padding-top: 220px;
+      padding-bottom: 120px;
+    }
 
-  	.introduction-section {
-  		.infos {
-  			max-width: 800px;
-  			
-  			p {
-					font-size: 46px;
-				}
+    .introduction-section {
+      .infos {
+        max-width: 800px;
 
-				h2 {
-					font-size: 90px;
-					line-height: 100px;
-				}
-  		}
+        p {
+          font-size: 46px;
+        }
 
-  		.scroll-icon {
-				width: 80px;
-			}
+        h2 {
+          font-size: 90px;
+          line-height: 100px;
+        }
+      }
 
-  		.social-networks {
-				max-height: 350px;
-	  	}
-  	}
+      .scroll-icon {
+        width: 80px;
+      }
 
-  	.portfolio-section {
-  		&::before {
-				border-bottom: 220px solid theme(color, grey-light);
-			}
-  	}
+      .social-networks {
+        max-height: 350px;
+      }
+    }
 
-  	.contact-section {
-  		&::before {
-  			border-bottom: 220px solid transparent;
-  		}
-  	}
+    .portfolio-section {
+      &::before {
+        border-bottom: 220px solid theme(color, grey-light);
+      }
+    }
+
+    .contact-section {
+      &::before {
+        border-bottom: 220px solid transparent;
+      }
+    }
   }
 
   /***
   *** desktop xxl ***
   ***/
   @media #{theme(media-queries, desktop-xxl)} {
-  	section {
-  		padding-top: 250px;
-  		padding-bottom: 150px;
-  	}
+    section {
+      padding-top: 250px;
+      padding-bottom: 150px;
+    }
 
-  	.introduction-section {
-  		.infos {
-  			max-width: 800px;
-  			
-  			p {
-					font-size: 52px;
-				}
+    .introduction-section {
+      .infos {
+        max-width: 800px;
 
-				h2 {
-					font-size: 100px;
-					line-height: 110px;
-				}
-  		}
+        p {
+          font-size: 52px;
+        }
 
-  		.scroll-icon {
-				width: 100px;
-			}
+        h2 {
+          font-size: 100px;
+          line-height: 110px;
+        }
+      }
 
-  		.social-networks {
-				max-height: 400px;
-	  	}
-  	}
+      .scroll-icon {
+        width: 100px;
+      }
 
-  	.portfolio-section {
-  		&::before {
-				border-bottom: 250px solid theme(color, grey-light);
-			}
-  	}
+      .social-networks {
+        max-height: 400px;
+      }
+    }
 
-  	.contact-section {
-  		&::before {
-  			border-bottom: 250px solid transparent;
-  		}
-  	}
+    .portfolio-section {
+      &::before {
+        border-bottom: 250px solid theme(color, grey-light);
+      }
+    }
+
+    .contact-section {
+      &::before {
+        border-bottom: 250px solid transparent;
+      }
+    }
   }
 }
