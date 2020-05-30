@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "811b9d29f337b919ecb023345ad085fa",
+    "revision": "60df0f16ef1f03929eff0ac856e2844d",
     "url": "/react-photos/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-photos/static/css/2.cfae0931.chunk.css"
   },
   {
-    "revision": "a6965e180c7eac7c85db",
-    "url": "/react-photos/static/css/main.4b566082.chunk.css"
+    "revision": "6aea29e2b7cc98945b23",
+    "url": "/react-photos/static/css/main.222e2c56.chunk.css"
   },
   {
     "revision": "84bcc75e65532eacd09e",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-photos/static/js/2.170bcf35.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a6965e180c7eac7c85db",
+    "revision": "6aea29e2b7cc98945b23",
     "url": "/react-photos/static/js/main.8288aeac.chunk.js"
   },
   {
