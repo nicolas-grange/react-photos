@@ -36,9 +36,9 @@ class ScrollUp extends React.Component {
 
   render() {
     return(
-      <a onClick={this.handleClick} className={"scroll-up " + (this.state.visible ? 'visible' : '')} href="#">
+      <button onClick={this.handleClick} className={"scroll-up " + (this.state.visible ? 'visible' : '')}>
         <ChevronIcon />
-      </a>
+      </button>
     );
   }
 }

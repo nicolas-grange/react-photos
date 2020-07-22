@@ -1,26 +1,30 @@
 import React from 'react';
-import {
-  Link
-} from 'react-router-dom';
 import {ArrowRightIcon} from '../Icons';
 
 class Button extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
   render() {
     const data = this.props.data;
-    const handleClick = this.props.handleClick;
 
-    if(data.anchor) {
-      return (
-        <a onClick={handleClick} className='button' href={data.path}>
-          {data.label}
-          <ArrowRightIcon/>
-        </a>
-      );
-    } else {
-      return (
-        <Link className='button' to={data.path}>{data.label}<ArrowRightIcon/></Link>
-      );
-    }
+    return (
+      <button onClick={this.handleClick} className='button' href={data.path}>
+        {data.label}
+        <ArrowRightIcon/>
+      </button>
+    );
+   
   }
 }
 

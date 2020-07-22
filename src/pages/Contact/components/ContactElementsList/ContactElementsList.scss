@@ -1,0 +1,87 @@
+.contact-elements-list {
+  max-width: 250px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 2;
+
+  li {
+    padding: 25px 0;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  /***
+  *** tablet portrait ***
+  ***/
+  @media #{theme(media-queries, tablet-portrait)} {
+    display: flex;
+    justify-content: space-around;
+    max-width: inherit;
+
+    li, 
+    li:first-of-type, 
+    li:last-of-type {
+      padding: 25px 0;
+    }
+
+    li {
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  /***
+  *** tablet landscape ***
+  ***/
+  @media #{theme(media-queries, tablet-landscape)} {
+    margin-right: 100px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    height: 100%;
+    flex-direction: column;
+    max-height: 350px;
+    justify-content: space-around;
+
+    li {
+      &,
+      &:first-of-type,
+      &:last-of-type {
+        padding: 0;
+      }
+    }
+  }
+
+  /***
+  *** desktop ***
+  ***/
+  @media #{theme(media-queries, desktop)} {
+    margin-right: 200px;
+    max-height: 400px;
+
+    li {
+      font-size: inherit;
+    }
+  }
+
+  /***
+  *** desktop xl ***
+  ***/
+  @media #{theme(media-queries, desktop-xl)} {
+    max-height: 500px;
+  }
+
+  /***
+  *** desktop xxl ***
+  ***/
+  @media #{theme(media-queries, desktop-xxl)} {
+    max-height: 550px;
+  }
+}

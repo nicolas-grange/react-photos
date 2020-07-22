@@ -1,7 +1,7 @@
 import React from 'react';
-import BurgerMenu from './BurgerMenu';
-import Overlay from './Overlay';
-import Navigation from './Navigation';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
+import HeaderOverlay from '../HeaderOverlay/HeaderOverlay';
+import HeaderNavigation from '../HeaderNavigation/HeaderNavigation';
 
 class Header extends React.Component {
   constructor(props) {
@@ -30,8 +30,8 @@ class Header extends React.Component {
       <div>
         <header className={"header-menu " + (open ? 'open' : '')} onClick={this.handleClick}>
           <BurgerMenu/>
-          <Overlay/>
-          <Navigation routes={routes}/>
+          <HeaderOverlay/>
+          <HeaderNavigation routes={routes}/>
         </header>
       </div>
     );

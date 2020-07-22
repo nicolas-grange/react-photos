@@ -1,0 +1,108 @@
+
+.contact-element-container {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+
+    path {
+      fill: theme(color, primary);
+    }
+  }
+
+  .contact-element {
+    display: flex;
+    flex-direction: column;
+
+    address {
+      font-style: normal;
+      line-height: 1.5;
+    }
+
+    span {
+      transition: color 500ms;
+    }
+
+    .title {
+      padding-bottom: 10px;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+  }
+}
+
+/***
+*** smartphone xxl ***
+***/
+@media #{theme(media-queries, smartphone-xxl)} {
+  a.contact-element-container:hover {
+    span {
+      color: theme(color, primary);
+    }
+  }
+}
+
+/***
+*** tablet portrait ***
+***/
+@media #{theme(media-queries, tablet-portrait)} {
+  .contact-element-container {
+    align-items: inherit;
+  }
+}
+  
+
+/***
+*** tablet landscape ***
+***/
+@media #{theme(media-queries, tablet-landscape)} {
+  .contact-element-container {
+    .contact-element {
+      address,
+      span {
+        color: theme(color, grey);
+      }
+
+      .title {
+        opacity: 0.9;
+        color: theme(color, light);
+      }
+    }
+  }
+}
+
+/***
+*** desktop ***
+***/
+@media #{theme(media-queries, desktop)} {
+  .contact-element-container {
+    font-size: inherit;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+    
+    span {
+      &.title, .title {
+        font-size: 1.1em;
+      }	
+    }
+  }
+}
+
+/***
+*** desktop xl ***
+***/
+@media #{theme(media-queries, desktop-xl)} {
+  .contact-element-container {
+    span {
+      &.title {
+        font-size: 1.3em;
+      }	
+    }
+  }
+}

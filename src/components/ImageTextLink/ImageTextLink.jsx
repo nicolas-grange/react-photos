@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button/Button';
+import LinkButton from '../Button/LinkButton';
 
 class ImageTextLink extends React.Component {
 
@@ -13,7 +13,7 @@ class ImageTextLink extends React.Component {
         <div className="text-container">
           <h3>{data.textLink.title}</h3>
           <p>{data.textLink.text}</p>
-          <Button data={data.textLink.link}/>
+          <LinkButton data={data.textLink.link}/>
         </div>
       </div>
     );

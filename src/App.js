@@ -5,12 +5,12 @@ import {
   Switch
 } from 'react-router-dom';
 import { updateAppVhUnit } from './scripts/utils.js';
-import Home from './components/Pages/Home';
-import About from './components/Pages/About';
-import Portfolio from './components/Pages/Portfolio';
-import Contact from './components/Pages/Contact';
-import Privacy from './components/Pages/Privacy';
-import NotFound from './components/Pages/NotFound';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
+import Privacy from './pages/Privacy/Privacy';
+import NotFound from './pages/NotFound/NotFound';
 import ScrollUp from './components/ScrollUp/ScrollUp';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
